@@ -1,0 +1,297 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssl",
+          "text": "§l+",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OnePress"
+          },
+          "displayCondition": {
+            "name": "CheckAdd1"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 46,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssl1",
+          "text": "§l+",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "TwoPress"
+          },
+          "displayCondition": {
+            "name": "CheckAdd2"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 46,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssl2",
+          "text": "§l+",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "ThreePress"
+          },
+          "displayCondition": {
+            "name": "CheckAdd3"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 46,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "§l+",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "FourPress"
+          },
+          "displayCondition": {
+            "name": "CheckAdd4"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 46,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ssl3",
+          "text": "§l+",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "FivePress"
+          },
+          "displayCondition": {
+            "name": "CheckAdd5"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 46,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_move_1",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMove1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_move_2",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMove2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_move_3",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMove3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_move_4",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMove4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_move_5",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMove5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "§l>>",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenMenu"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 397,
+          "y": 6
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sslx",
+          "text": "§lX",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "XPress1"
+          },
+          "displayCondition": {
+            "name": "CheckX1"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 7,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sslx1",
+          "text": "§lX",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "XPress2"
+          },
+          "displayCondition": {
+            "name": "CheckX2"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 7,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sslx2",
+          "text": "§lX",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "XPress4"
+          },
+          "displayCondition": {
+            "name": "CheckX4"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 8,
+          "y": 130
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sslx3",
+          "text": "§lX",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "XPress5"
+          },
+          "displayCondition": {
+            "name": "CheckX5"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 8,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sslx4",
+          "text": "§lX",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "XPress3"
+          },
+          "displayCondition": {
+            "name": "CheckX3"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 7,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

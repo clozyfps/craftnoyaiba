@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:raiser_armor_trim_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.thunder_breathing.title"
+    },
+    "description": {
+      "translate": "advancements.thunder_breathing.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thunder_breathing": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:craft_no_yaiba"
+}

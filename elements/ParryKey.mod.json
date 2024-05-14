@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F",
+    "keyBindingName": "Parry",
+    "keyBindingCategoryKey": "cny",
+    "onKeyPressed": {
+      "name": "ParryKeyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "ParryKeyOnKeyReleased"
+    }
+  }
+}

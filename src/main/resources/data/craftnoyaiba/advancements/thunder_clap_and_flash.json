@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:raiser_armor_trim_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.thunder_clap_and_flash.title"
+    },
+    "description": {
+      "translate": "advancements.thunder_clap_and_flash.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thunder_clap_and_flash": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "craftnoyaiba:thunder_breathing"
+}

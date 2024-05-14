@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "craftnoyaiba:basic_nichirin_sword"
+    },
+    "title": {
+      "translate": "advancements.craft_no_yaiba.title"
+    },
+    "description": {
+      "translate": "advancements.craft_no_yaiba.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_no_yaiba": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

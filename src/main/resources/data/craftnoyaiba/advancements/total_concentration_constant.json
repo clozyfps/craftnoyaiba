@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:string"
+    },
+    "title": {
+      "translate": "advancements.total_concentration_constant.title"
+    },
+    "description": {
+      "translate": "advancements.total_concentration_constant.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "total_concentration_constant": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:total_concentration"
+}

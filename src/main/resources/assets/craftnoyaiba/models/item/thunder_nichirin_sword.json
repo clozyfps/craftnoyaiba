@@ -1,0 +1,7 @@
+{
+  "parent": "craftnoyaiba:custom/nichirinsword",
+  "textures": {
+    "0": "craftnoyaiba:block/nichirin_thunder",
+    "particle": "craftnoyaiba:item/a2i2e_layer_2"
+  }
+}

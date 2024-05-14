@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "craftnoyaiba:kaigaku_human",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

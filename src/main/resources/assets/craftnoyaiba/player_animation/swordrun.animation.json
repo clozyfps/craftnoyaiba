@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"swordrun": {
+			"animation_length": 31.79167,
+			"bones": {
+				"left_arm": {
+					"rotation": {
+						"vector": [42.17167, -29.37113, 28.3282]
+					},
+					"position": {
+						"vector": [-2, -3, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"vector": [22.5, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

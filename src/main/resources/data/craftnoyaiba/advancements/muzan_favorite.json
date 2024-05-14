@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "craftnoyaiba:blood"
+    },
+    "title": {
+      "translate": "advancements.muzan_favorite.title"
+    },
+    "description": {
+      "translate": "advancements.muzan_favorite.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "muzan_favorite": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:demon"
+}

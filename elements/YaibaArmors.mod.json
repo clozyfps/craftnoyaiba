@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Yaiba Armors",
+    "icon": {
+      "value": "CUSTOM:DemonSlayerUniform.body"
+    },
+    "showSearch": true
+  }
+}

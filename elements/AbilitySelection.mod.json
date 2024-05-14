@@ -1,0 +1,269 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_1_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill1Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_2_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill2Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_3_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill3Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_4_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill4Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_5_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill5Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_6_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill6Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_7_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill7Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_skill_8_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill8Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 143
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill1Pressed"
+          },
+          "x": 24,
+          "y": 17
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton1",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill2Pressed"
+          },
+          "x": 24,
+          "y": 35
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton2",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill3Pressed"
+          },
+          "x": 24,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton3",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill4Pressed"
+          },
+          "x": 24,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton4",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill5Pressed"
+          },
+          "x": 24,
+          "y": 89
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton5",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill6Pressed"
+          },
+          "x": 24,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton6",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill7Pressed"
+          },
+          "x": 24,
+          "y": 125
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton7",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Skill8Pressed"
+          },
+          "x": 24,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "§l>>",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenAbilityMenu"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 393,
+          "y": 8
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

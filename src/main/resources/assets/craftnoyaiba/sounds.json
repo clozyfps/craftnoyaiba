@@ -1,0 +1,42 @@
+{
+  "clash": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:sword-clash-1",
+        "stream": false
+      }
+    ]
+  },
+  "heartbeat": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:heartbeatloop",
+        "stream": false
+      }
+    ]
+  },
+  "breathingbegun": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:zenitsuraw",
+        "stream": false
+      }
+    ]
+  },
+  "shock": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:electric_shock",
+        "stream": false
+      }
+    ]
+  },
+  "stab": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:bloody",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"demonrightarm": {
+			"loop": true,
+			"bones": {
+				"RightArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"demonleftarm": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"demonhead": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"demonrightleg": {
+			"loop": true,
+			"bones": {
+				"RightLeg": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"demonleftleg": {
+			"loop": true,
+			"bones": {
+				"LeftLeg": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"BothArmsGoneDemon": {
+			"loop": true,
+			"bones": {
+				"RightArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"LeftArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"RightArmRightLegDemon": {
+			"loop": true,
+			"bones": {
+				"RightArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"RightLeg": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"LeftLegLeftArmDemon": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"LeftLeg": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"AttackDemon": {
+			"animation_length": 0.25,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [22.5, 0, 0]
+						}
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 65]
+						},
+						"0.25": {
+							"vector": [-104.9119, -14.9854, 65]
+						}
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -65]
+						},
+						"0.25": {
+							"vector": [-104.91193, 14.98539, -64.33037]
+						}
+					}
+				}
+			}
+		},
+		"demonidle": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

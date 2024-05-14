@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate": "advancements.repetitive_action.title"
+    },
+    "description": {
+      "translate": "advancements.repetitive_action.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "repetitive_action": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

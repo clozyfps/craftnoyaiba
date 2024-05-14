@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Breathe",
+    "keyBindingCategoryKey": "cny",
+    "onKeyPressed": {
+      "name": "BreatheOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "BreatheOnKeyReleased"
+    }
+  }
+}
