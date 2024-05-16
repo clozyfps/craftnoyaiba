@@ -34,6 +34,8 @@ public class CraftnoyaibaModTabs {
 	public static final RegistryObject<CreativeModeTab> YAIBA_HUMANS = REGISTRY.register("yaiba_humans",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_humans")).icon(() -> new ItemStack(CraftnoyaibaModItems.KAIGAKU_HUMAN_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CraftnoyaibaModItems.KAIGAKU_HUMAN_SPAWN_EGG.get());
+				tabData.accept(CraftnoyaibaModItems.KIRIYA_UBUYASHIKI_SPAWN_EGG.get());
+				tabData.accept(CraftnoyaibaModItems.KANATA_UBUYASHIKI_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftnoyaiba:block/invis",
+    "up": "craftnoyaiba:block/invis",
+    "north": "craftnoyaiba:block/invis",
+    "east": "craftnoyaiba:block/invis",
+    "south": "craftnoyaiba:block/invis",
+    "west": "craftnoyaiba:block/invis",
+    "particle": "craftnoyaiba:block/invis"
+  },
+  "render_type": "translucent"
+}

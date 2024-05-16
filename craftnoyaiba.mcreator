@@ -2513,6 +2513,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4072,6 +4088,323 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Wisteria",
+      "type": "block",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wisteria",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/wisteria.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/WisteriaBlock.java",
+          "src/main/resources/assets/craftnoyaiba/blockstates/wisteria.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/wisteria.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "YaibaBlocks",
+      "type": "tab",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_blocks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "DemonSpawnPoint",
+      "type": "block",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_spawn_point",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/item/demon_spawn_point.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/demon_spawn_point.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/DemonSpawnPointBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/demon_spawn_point.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Fujikasane",
+      "type": "biome",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fujikasane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/fujikasane_tree.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/fujikasane_tree.json",
+          "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneTrunkDecorator.java",
+          "src/main/resources/data/craftnoyaiba/worldgen/biome/fujikasane.json",
+          "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneFruitDecorator.java",
+          "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneLeaveDecorator.java"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "FinalSelection",
+      "type": "structure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/final_selection.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/final_selection.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/final_selection.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "FinalSelectionDemon",
+      "type": "livingentity",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection_demon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/FinalSelectionDemonEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FinalSelectionDemonRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DemonSpawnPointUpdateTick",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_spawn_point_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/DemonSpawnPointUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Procedures"
+    },
+    {
+      "name": "FinalSelectionDemonEntityDies",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection_demon_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FinalSelectionDemonEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "KiriyaUbuyashiki",
+      "type": "livingentity",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiriya_ubuyashiki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/KiriyaUbuyashikiEntity.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/kiriya_ubuyashiki_spawn_egg.json",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KiriyaUbuyashikiRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "KanataUbuyashiki",
+      "type": "livingentity",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kanata_ubuyashiki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/KanataUbuyashikiEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KanataUbuyashikiRenderer.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/kanata_ubuyashiki_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MuzanSpawnPoint",
+      "type": "block",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muzan_spawn_point",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/muzan_spawn_point.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/muzan_spawn_point.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/MuzanSpawnPointBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/muzan_spawn_point.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MuzanSpawnPointUpdateTick",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muzan_spawn_point_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/MuzanSpawnPointUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Procedures"
+    },
+    {
+      "name": "InfinityCastleBiome",
+      "type": "biome",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/biome/infinity_castle_biome.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/infinity_castle_biome_tree.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/infinity_castle_biome_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "InfinityCastle",
+      "type": "structure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityFortressPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_fortress_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityFortressPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "InfinityFortress",
+      "type": "dimension",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_fortress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/world/dimension/InfinityFortressDimension.java",
+          "src/main/resources/data/craftnoyaiba/dimension/infinity_fortress.json",
+          "src/main/resources/data/craftnoyaiba/dimension_type/infinity_fortress.json"
+        ]
+      },
+      "path": "~/Dimensions"
     }
   ],
   "variable_elements": [
@@ -4572,6 +4905,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "InfinityCastleSpawned",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -4614,17 +4953,29 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "biwa",
+      "files": [
+        "shamisen_sound"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "entity.craftnoyaiba.kanata_ubuyashiki": "Kanata Ubuyashiki",
       "item.craftnoyaiba.gourd": "Gourd",
       "gui.craftnoyaiba.create_ability.button_sslx2": "§lX",
       "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
       "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
+      "item.craftnoyaiba.kiriya_ubuyashiki_spawn_egg": "Kiriya Ubuyashiki Spawn Egg",
       "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
       "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
       "advancements.muzan_favorite.title": "Muzan\u0027s Favorite",
+      "biome.craftnoyaiba.fujikasane": "Fujikasane",
+      "subtitles.biwa": "",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
       "gui.craftnoyaiba.create_ability.button_sslx1": "§lX",
@@ -4639,10 +4990,13 @@
       "subtitles.shock": "",
       "item_group.craftnoyaiba.yaiba_armors": "Yaiba Armors",
       "item.craftnoyaiba.blade": "Blade",
+      "block.craftnoyaiba.muzan_spawn_point": "Muzan Spawn Point",
+      "block.craftnoyaiba.wisteria": "Wisteria",
       "gui.craftnoyaiba.menu.button_ssl": "§l\u003e\u003e",
       "gui.craftnoyaiba.take_blood.button_take": "Take",
       "gamerule.cnyAutoParry.description": "parry automatically",
       "advancements.recovery_breathing.title": "Recovery Breathing",
+      "block.craftnoyaiba.demon_spawn_point": "Demon Spawn Point",
       "advancements.demon.title": "Demon",
       "entity.craftnoyaiba.jigoro_kuwajima": "Jigoro Kuwajima",
       "subtitles.heartbeat": "",
@@ -4677,15 +5031,18 @@
       "key.craftnoyaiba.use_skill": "Use Skill",
       "item.craftnoyaiba.jigoro_kuwajima_spawn_egg": "Jigoro Kuwajima Spawn Egg",
       "advancements.heat_lightning.descr": "Learn Heat Lightning",
+      "item.craftnoyaiba.kanata_ubuyashiki_spawn_egg": "Kanata Ubuyashiki Spawn Egg",
       "advancements.repetitive_action_mastered.descr": "Use Breathings 250 Times After Learning Repetitive Action",
       "item.craftnoyaiba.water_nichirin_sword": "Water Nichirin Sword",
       "item.craftnoyaiba.test": "Test",
       "advancements.recovery_breathing.descr": "WIP",
       "item_group.craftnoyaiba.yaiba_humans": "Yaiba Humans",
       "advancements.heat_lightning.title": "Heat Lightning",
+      "biome.craftnoyaiba.infinity_castle_biome": "Infinity Castle Biome",
       "advancements.repetitive_action_mastered.title": "Repetitive Action Mastered",
       "item_group.craftnoyaiba.yaiba_trainers": "Yaiba Trainers",
       "biome.craftnoyaiba.town": "Town",
+      "entity.craftnoyaiba.final_selection_demon": "Final Selection Demon",
       "effect.craftnoyaiba.tcaf_active": "TcafActive",
       "subtitles.stab": "",
       "subtitles.breathingbegun": "",
@@ -4697,7 +5054,9 @@
       "advancements.thunder_breathing.descr": "Learn Thunder Breathing",
       "item.craftnoyaiba.thunder_nichirin_sword": "Thunder Nichirin Sword",
       "advancements.craft_no_yaiba.title": "Craft No Yaiba",
-      "advancements.thunder_clap_and_flash.descr": "Learn Thunderclap And Flash"
+      "advancements.thunder_clap_and_flash.descr": "Learn Thunderclap And Flash",
+      "item_group.craftnoyaiba.yaiba_blocks": "Yaiba Blocks",
+      "entity.craftnoyaiba.kiriya_ubuyashiki": "Kiriya Ubuyashiki"
     }
   },
   "foldersRoot": {
@@ -4871,6 +5230,15 @@
       },
       {
         "name": "Projectiles",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
         "children": [
           {
             "name": "Procedures",

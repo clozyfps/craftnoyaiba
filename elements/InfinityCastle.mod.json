@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "infinitycastle",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 5,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:InfinityCastleBiome"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}

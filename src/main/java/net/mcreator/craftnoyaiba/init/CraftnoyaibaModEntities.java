@@ -19,9 +19,12 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.craftnoyaiba.entity.ThunderClapAndFlashMobEntity;
 import net.mcreator.craftnoyaiba.entity.TCAFProjectileEntity;
 import net.mcreator.craftnoyaiba.entity.RockEntity;
+import net.mcreator.craftnoyaiba.entity.KiriyaUbuyashikiEntity;
+import net.mcreator.craftnoyaiba.entity.KanataUbuyashikiEntity;
 import net.mcreator.craftnoyaiba.entity.KaigakuHumanEntity;
 import net.mcreator.craftnoyaiba.entity.JigoroKuwajimaEntity;
 import net.mcreator.craftnoyaiba.entity.HeatLightningStartEntity;
+import net.mcreator.craftnoyaiba.entity.FinalSelectionDemonEntity;
 import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -44,6 +47,18 @@ public class CraftnoyaibaModEntities {
 					.setCustomClientFactory(ThunderClapAndFlashMobEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<HeatLightningStartEntity>> HEAT_LIGHTNING_START = register("projectile_heat_lightning_start", EntityType.Builder.<HeatLightningStartEntity>of(HeatLightningStartEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(HeatLightningStartEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FinalSelectionDemonEntity>> FINAL_SELECTION_DEMON = register("final_selection_demon",
+			EntityType.Builder.<FinalSelectionDemonEntity>of(FinalSelectionDemonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FinalSelectionDemonEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KiriyaUbuyashikiEntity>> KIRIYA_UBUYASHIKI = register("kiriya_ubuyashiki",
+			EntityType.Builder.<KiriyaUbuyashikiEntity>of(KiriyaUbuyashikiEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KiriyaUbuyashikiEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KanataUbuyashikiEntity>> KANATA_UBUYASHIKI = register("kanata_ubuyashiki",
+			EntityType.Builder.<KanataUbuyashikiEntity>of(KanataUbuyashikiEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KanataUbuyashikiEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -55,6 +70,9 @@ public class CraftnoyaibaModEntities {
 			JigoroKuwajimaEntity.init();
 			KaigakuHumanEntity.init();
 			ThunderClapAndFlashMobEntity.init();
+			FinalSelectionDemonEntity.init();
+			KiriyaUbuyashikiEntity.init();
+			KanataUbuyashikiEntity.init();
 		});
 	}
 
@@ -63,5 +81,8 @@ public class CraftnoyaibaModEntities {
 		event.put(JIGORO_KUWAJIMA.get(), JigoroKuwajimaEntity.createAttributes().build());
 		event.put(KAIGAKU_HUMAN.get(), KaigakuHumanEntity.createAttributes().build());
 		event.put(THUNDER_CLAP_AND_FLASH_MOB.get(), ThunderClapAndFlashMobEntity.createAttributes().build());
+		event.put(FINAL_SELECTION_DEMON.get(), FinalSelectionDemonEntity.createAttributes().build());
+		event.put(KIRIYA_UBUYASHIKI.get(), KiriyaUbuyashikiEntity.createAttributes().build());
+		event.put(KANATA_UBUYASHIKI.get(), KanataUbuyashikiEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftnoyaiba:block/spawnpoint",
+    "up": "craftnoyaiba:block/spawnpoint",
+    "north": "craftnoyaiba:block/spawnpoint",
+    "east": "craftnoyaiba:block/spawnpoint",
+    "south": "craftnoyaiba:block/spawnpoint",
+    "west": "craftnoyaiba:block/spawnpoint",
+    "particle": "craftnoyaiba:block/spawnpoint"
+  },
+  "render_type": "solid"
+}

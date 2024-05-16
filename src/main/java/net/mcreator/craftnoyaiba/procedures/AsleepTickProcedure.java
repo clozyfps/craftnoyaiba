@@ -9,6 +9,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
+import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
 import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
 
 import javax.annotation.Nullable;
@@ -29,11 +30,13 @@ public class AsleepTickProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 4) {
-			if (entity.isAlive()) {
-				if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CraftnoyaibaModMobEffects.ASLEEP.get()))) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.ASLEEP.get(), 500, 0, false, false));
+		if (((entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).Trait).equals("Sleepy Head")) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 4) {
+				if (entity.isAlive()) {
+					if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CraftnoyaibaModMobEffects.ASLEEP.get()))) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.ASLEEP.get(), 500, 0, false, false));
+					}
 				}
 			}
 		}

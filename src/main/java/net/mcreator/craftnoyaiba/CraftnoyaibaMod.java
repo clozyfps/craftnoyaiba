@@ -36,6 +36,7 @@ import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
 import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMenus;
 import net.mcreator.craftnoyaiba.init.CraftnoyaibaModItems;
 import net.mcreator.craftnoyaiba.init.CraftnoyaibaModEntities;
+import net.mcreator.craftnoyaiba.init.CraftnoyaibaModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -55,6 +56,7 @@ public class CraftnoyaibaMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		CraftnoyaibaModSounds.REGISTRY.register(bus);
+		CraftnoyaibaModBlocks.REGISTRY.register(bus);
 
 		CraftnoyaibaModItems.REGISTRY.register(bus);
 		CraftnoyaibaModEntities.REGISTRY.register(bus);

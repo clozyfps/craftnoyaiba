@@ -20,4 +20,5 @@ public class CraftnoyaibaModSounds {
 	public static final RegistryObject<SoundEvent> BREATHINGBEGUN = REGISTRY.register("breathingbegun", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "breathingbegun")));
 	public static final RegistryObject<SoundEvent> SHOCK = REGISTRY.register("shock", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "shock")));
 	public static final RegistryObject<SoundEvent> STAB = REGISTRY.register("stab", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "stab")));
+	public static final RegistryObject<SoundEvent> BIWA = REGISTRY.register("biwa", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "biwa")));
 }

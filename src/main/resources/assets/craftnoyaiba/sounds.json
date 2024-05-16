@@ -38,5 +38,13 @@
         "stream": false
       }
     ]
+  },
+  "biwa": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:shamisen_sound",
+        "stream": false
+      }
+    ]
   }
 }

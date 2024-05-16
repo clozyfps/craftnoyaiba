@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftnoyaiba:block/pink_leaves",
+    "up": "craftnoyaiba:block/pink_leaves",
+    "north": "craftnoyaiba:block/pink_leaves",
+    "east": "craftnoyaiba:block/pink_leaves",
+    "south": "craftnoyaiba:block/pink_leaves",
+    "west": "craftnoyaiba:block/pink_leaves",
+    "particle": "craftnoyaiba:block/pink_leaves"
+  },
+  "render_type": "translucent"
+}

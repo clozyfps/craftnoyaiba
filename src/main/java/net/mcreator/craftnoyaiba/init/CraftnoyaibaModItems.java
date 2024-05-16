@@ -9,7 +9,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.craftnoyaiba.item.WaterNichirinSwordItem;
 import net.mcreator.craftnoyaiba.item.ThunderNichirinSwordItem;
@@ -34,4 +36,13 @@ public class CraftnoyaibaModItems {
 	public static final RegistryObject<Item> DEMON_SLAYER_UNIFORM_CHESTPLATE = REGISTRY.register("demon_slayer_uniform_chestplate", () -> new DemonSlayerUniformItem.Chestplate());
 	public static final RegistryObject<Item> DEMON_SLAYER_UNIFORM_LEGGINGS = REGISTRY.register("demon_slayer_uniform_leggings", () -> new DemonSlayerUniformItem.Leggings());
 	public static final RegistryObject<Item> BLADE = REGISTRY.register("blade", () -> new BladeItem());
+	public static final RegistryObject<Item> WISTERIA = block(CraftnoyaibaModBlocks.WISTERIA);
+	public static final RegistryObject<Item> DEMON_SPAWN_POINT = block(CraftnoyaibaModBlocks.DEMON_SPAWN_POINT);
+	public static final RegistryObject<Item> KIRIYA_UBUYASHIKI_SPAWN_EGG = REGISTRY.register("kiriya_ubuyashiki_spawn_egg", () -> new ForgeSpawnEggItem(CraftnoyaibaModEntities.KIRIYA_UBUYASHIKI, -8363899, -16777216, new Item.Properties()));
+	public static final RegistryObject<Item> KANATA_UBUYASHIKI_SPAWN_EGG = REGISTRY.register("kanata_ubuyashiki_spawn_egg", () -> new ForgeSpawnEggItem(CraftnoyaibaModEntities.KANATA_UBUYASHIKI, -8363899, -1, new Item.Properties()));
+	public static final RegistryObject<Item> MUZAN_SPAWN_POINT = block(CraftnoyaibaModBlocks.MUZAN_SPAWN_POINT);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }

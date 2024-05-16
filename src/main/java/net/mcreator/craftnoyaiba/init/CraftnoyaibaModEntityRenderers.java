@@ -12,8 +12,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.craftnoyaiba.client.renderer.ThunderClapAndFlashMobRenderer;
+import net.mcreator.craftnoyaiba.client.renderer.KiriyaUbuyashikiRenderer;
+import net.mcreator.craftnoyaiba.client.renderer.KanataUbuyashikiRenderer;
 import net.mcreator.craftnoyaiba.client.renderer.KaigakuHumanRenderer;
 import net.mcreator.craftnoyaiba.client.renderer.JigoroKuwajimaRenderer;
+import net.mcreator.craftnoyaiba.client.renderer.FinalSelectionDemonRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CraftnoyaibaModEntityRenderers {
@@ -25,5 +28,8 @@ public class CraftnoyaibaModEntityRenderers {
 		event.registerEntityRenderer(CraftnoyaibaModEntities.TCAF_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CraftnoyaibaModEntities.THUNDER_CLAP_AND_FLASH_MOB.get(), ThunderClapAndFlashMobRenderer::new);
 		event.registerEntityRenderer(CraftnoyaibaModEntities.HEAT_LIGHTNING_START.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CraftnoyaibaModEntities.FINAL_SELECTION_DEMON.get(), FinalSelectionDemonRenderer::new);
+		event.registerEntityRenderer(CraftnoyaibaModEntities.KIRIYA_UBUYASHIKI.get(), KiriyaUbuyashikiRenderer::new);
+		event.registerEntityRenderer(CraftnoyaibaModEntities.KANATA_UBUYASHIKI.get(), KanataUbuyashikiRenderer::new);
 	}
 }
