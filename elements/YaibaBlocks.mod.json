@@ -4,7 +4,7 @@
   "definition": {
     "name": "Yaiba Blocks",
     "icon": {
-      "value": "CUSTOM:Wisteria"
+      "value": "CUSTOM:PillarBlockTop"
     },
     "showSearch": true
   }

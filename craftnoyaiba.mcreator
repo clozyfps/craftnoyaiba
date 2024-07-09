@@ -7181,6 +7181,96 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "PillarBlockTop",
+      "type": "block",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_block_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_top.json",
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_top.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_top.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockTopBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_top.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PillarBlockBottom",
+      "type": "block",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_block_bottom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_bottom.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_bottom.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_bottom.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockBottomBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_bottom.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PillarMiddle",
+      "type": "block",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_middle.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarMiddleBlock.java",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_middle.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_middle.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_middle.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Tatami1",
+      "type": "block",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatami_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/tatami_1.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_1.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_1.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/tatami_1.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami1Block.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Tatami2",
+      "type": "block",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatami_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami2Block.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/tatami_2.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_2.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/tatami_2.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_2.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -8040,12 +8130,13 @@
       "entity.craftnoyaiba.kanata_ubuyashiki": "Kanata Ubuyashiki",
       "entity.craftnoyaiba.flame_first_form": "Flame First Form",
       "gui.craftnoyaiba.create_ability.button_sslx2": "§lX",
-      "effect.craftnoyaiba.tcafend": "Tcafend",
-      "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
-      "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
       "item.craftnoyaiba.kiriya_ubuyashiki_spawn_egg": "Kiriya Ubuyashiki Spawn Egg",
-      "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
+      "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
+      "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
+      "effect.craftnoyaiba.tcafend": "Tcafend",
       "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
+      "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
+      "block.craftnoyaiba.pillar_block_bottom": "Pillar Block (Bottom)",
       "subtitles.biwa": "",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
@@ -8053,9 +8144,9 @@
       "advancements.repetitive_action.descr": "Speak to Himejima",
       "advancements.total_concentration_constant.descr": "Master the art of \"Total Concentration\"",
       "effect.craftnoyaiba.cooldown": "Cooldown",
-      "item.craftnoyaiba.special_thunder_nichirin": "Special Thunder Nichirin",
-      "item.craftnoyaiba.khakkhara": "Khakkhara",
       "advancements.the_infinity_castle.title": "The Infinity Castle",
+      "item.craftnoyaiba.khakkhara": "Khakkhara",
+      "item.craftnoyaiba.special_thunder_nichirin": "Special Thunder Nichirin",
       "item_group.craftnoyaiba.yaiba_nichirins": "Yaiba Nichirins",
       "death.attack.breathing_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.opening_thread.title": "Opening Thread",
@@ -8083,6 +8174,8 @@
       "effect.craftnoyaiba.awaken_breath": "AwakenBreath",
       "entity.craftnoyaiba.kaigaku_human": "Kaigaku (Human)",
       "advancements.head_regeneration.descr": "Unlock Head Regeneration As A Demon.",
+      "block.craftnoyaiba.tatami_1": "Tatami (1)",
+      "block.craftnoyaiba.tatami_2": "Tatami (1)",
       "advancements.total_concentration.title": "Total Concentration",
       "advancements.demon.descr": "Become a Demon.",
       "item.craftnoyaiba.jigoro_kuwajima_spawn_egg": "Jigoro Kuwajima Spawn Egg",
@@ -8166,7 +8259,9 @@
       "item.craftnoyaiba.sound_nichirin_sword": "Sound Nichirin Sword",
       "effect.craftnoyaiba.head_regeneration_timer": "Head Regeneration Timer",
       "subtitles.clash": "",
+      "block.craftnoyaiba.pillar_middle": "Pillar Block (Middle)",
       "gui.craftnoyaiba.create_ability.button_sslx": "§lX",
+      "block.craftnoyaiba.pillar_block_top": "Pillar Block (Top)",
       "advancements.demon_slayer.descr": "Become a Demon Slayer",
       "item.craftnoyaiba.infinity_castle_door_upside_down_spawn_egg": "Infinity Castle Door Upside Down Spawn Egg",
       "effect.craftnoyaiba.pre_six_fold": "Pre Six Fold",
