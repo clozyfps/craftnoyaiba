@@ -1,24 +1,111 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_empty",
-          "text": {
-            "fixedValue": "",
-            "name": "BloodValue"
+          "image": "demon_ui_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar1"
           },
-          "color": {
-            "value": -3407821,
-            "falpha": 0.0
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar0"
           },
-          "anchorPoint": "BOTTOM_CENTER",
-          "x": 213,
-          "y": 179
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar2"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar3"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar4"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar5"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar6"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demon_ui_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BloodBar7"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
         }
       }
     ],
@@ -32,7 +119,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

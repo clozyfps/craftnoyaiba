@@ -1,0 +1,8 @@
+{
+  "parent": "craftnoyaiba:custom/khakkara",
+  "textures": {
+    "0": "craftnoyaiba:block/khakkara1",
+    "1": "craftnoyaiba:block/khakkara2",
+    "particle": "craftnoyaiba:item/a2i2e_layer_2"
+  }
+}

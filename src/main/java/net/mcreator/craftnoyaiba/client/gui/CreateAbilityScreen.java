@@ -113,11 +113,6 @@ public class CreateAbilityScreen extends AbstractContainerScreen<CreateAbilityMe
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_ssl = new PlainTextButton(this.leftPos + -168, this.topPos + -20, 40, 20, Component.translatable("gui.craftnoyaiba.create_ability.button_ssl"), e -> {

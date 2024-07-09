@@ -20,4 +20,6 @@ public class CraftnoyaibaModBlocks {
 	public static final RegistryObject<Block> WISTERIA = REGISTRY.register("wisteria", () -> new WisteriaBlock());
 	public static final RegistryObject<Block> DEMON_SPAWN_POINT = REGISTRY.register("demon_spawn_point", () -> new DemonSpawnPointBlock());
 	public static final RegistryObject<Block> MUZAN_SPAWN_POINT = REGISTRY.register("muzan_spawn_point", () -> new MuzanSpawnPointBlock());
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 }

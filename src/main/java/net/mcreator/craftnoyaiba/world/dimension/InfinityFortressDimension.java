@@ -33,7 +33,7 @@ public class InfinityFortressDimension {
 
 				@Override
 				public boolean isFoggyAt(int x, int y) {
-					return true;
+					return false;
 				}
 			};
 			event.register(new ResourceLocation("craftnoyaiba:infinity_fortress"), customEffect);
@@ -48,7 +48,7 @@ public class InfinityFortressDimension {
 		double y = entity.getY();
 		double z = entity.getZ();
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("craftnoyaiba:infinity_fortress"))) {
-			InfinityFortressPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
+			InfinityFortressPlayerEntersDimensionProcedure.execute(world, x, y, z);
 		}
 	}
 }

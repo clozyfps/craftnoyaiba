@@ -1,0 +1,7 @@
+{
+  "parent": "craftnoyaiba:custom/uzui_sword",
+  "textures": {
+    "2": "craftnoyaiba:block/uzui_sword",
+    "particle": "craftnoyaiba:item/a2i2e_layer_2"
+  }
+}

@@ -3,6 +3,7 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
+    "ambient_sound": "craftnoyaiba:uppermoonmeeting",
     "foliage_color": 10387789,
     "grass_color": 9470285,
     "sky_color": -14939638,
@@ -32,9 +33,7 @@
     [],
     [],
     [],
-    [
-      "craftnoyaiba:infinity_castle_biome_tree"
-    ],
+    [],
     []
   ]
 }

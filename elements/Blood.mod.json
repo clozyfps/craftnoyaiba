@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "blood_droplet",
+    "texture": "2335022eef39af1",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

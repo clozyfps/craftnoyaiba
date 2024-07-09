@@ -34,6 +34,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
 import java.util.function.Supplier;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CraftnoyaibaModVariables {
@@ -52,20 +53,29 @@ public class CraftnoyaibaModVariables {
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
@@ -149,6 +159,26 @@ public class CraftnoyaibaModVariables {
 			clone.BloodDemonArt = original.BloodDemonArt;
 			clone.Blood = original.Blood;
 			clone.BloodMax = original.BloodMax;
+			clone.InfinityCastleClearTimer = original.InfinityCastleClearTimer;
+			clone.Form1LimbTarget = original.Form1LimbTarget;
+			clone.Form2LimbTarget = original.Form2LimbTarget;
+			clone.Form3LimbTarget = original.Form3LimbTarget;
+			clone.Form4LimbTarget = original.Form4LimbTarget;
+			clone.Form5LimbTarget = original.Form5LimbTarget;
+			clone.Form6LimbTarget = original.Form6LimbTarget;
+			clone.Form7LimbTarget = original.Form7LimbTarget;
+			clone.Form8LimbTarget = original.Form8LimbTarget;
+			clone.TransparentWorld = original.TransparentWorld;
+			clone.RightArmHealthMax = original.RightArmHealthMax;
+			clone.RightArmHealth = original.RightArmHealth;
+			clone.LeftArmHealthMax = original.LeftArmHealthMax;
+			clone.LeftArmHealth = original.LeftArmHealth;
+			clone.HeadMax = original.HeadMax;
+			clone.HeadHealth = original.HeadHealth;
+			clone.LeftLegHealth = original.LeftLegHealth;
+			clone.LeftLegHealthMax = original.LeftLegHealthMax;
+			clone.RightLegHealth = original.RightLegHealth;
+			clone.RightLegHealthMax = original.RightLegHealthMax;
 			if (!event.isWasDeath()) {
 				clone.Slot = original.Slot;
 				clone.ParryTimer = original.ParryTimer;
@@ -157,6 +187,18 @@ public class CraftnoyaibaModVariables {
 				clone.DefenseStat = original.DefenseStat;
 				clone.ThunderRunQuest = original.ThunderRunQuest;
 				clone.Cooldown = original.Cooldown;
+				clone.ActiveLimbTarget = original.ActiveLimbTarget;
+				clone.ActiveLimbTimer = original.ActiveLimbTimer;
+				clone.LostRightArm = original.LostRightArm;
+				clone.LostLeftArm = original.LostLeftArm;
+				clone.LostRightLeg = original.LostRightLeg;
+				clone.LostLeftLeg = original.LostLeftLeg;
+				clone.LostHead = original.LostHead;
+			}
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
 			}
 		}
 
@@ -406,12 +448,39 @@ public class CraftnoyaibaModVariables {
 		public double DemonPowerMasteryMax = 0;
 		public double DemonPowerMastery = 0;
 		public String BloodDemonArt = "";
-		public double Blood = 0;
-		public double BloodMax = 0.0;
+		public double Blood = 0.0;
+		public double BloodMax = 15.0;
+		public double InfinityCastleClearTimer = 0;
+		public String Form1LimbTarget = "";
+		public String Form2LimbTarget = "";
+		public String Form3LimbTarget = "";
+		public String Form4LimbTarget = "";
+		public String Form5LimbTarget = "";
+		public String Form6LimbTarget = "";
+		public String Form7LimbTarget = "";
+		public String Form8LimbTarget = "";
+		public boolean TransparentWorld = false;
+		public double RightArmHealthMax = 0;
+		public double RightArmHealth = 0;
+		public double LeftArmHealthMax = 0;
+		public double LeftArmHealth = 0;
+		public double HeadMax = 0;
+		public double HeadHealth = 0;
+		public double LeftLegHealth = 0;
+		public double LeftLegHealthMax = 0;
+		public double RightLegHealth = 0;
+		public double RightLegHealthMax = 0;
+		public String ActiveLimbTarget = "\"\"";
+		public double ActiveLimbTimer = 0;
+		public boolean LostRightArm = false;
+		public boolean LostLeftArm = false;
+		public boolean LostRightLeg = false;
+		public boolean LostLeftLeg = false;
+		public boolean LostHead = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				CraftnoyaibaMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				CraftnoyaibaMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(entity.level()::dimension), new PlayerVariablesSyncMessage(this, entity.getId()));
 		}
 
 		public Tag writeNBT() {
@@ -499,6 +568,33 @@ public class CraftnoyaibaModVariables {
 			nbt.putString("BloodDemonArt", BloodDemonArt);
 			nbt.putDouble("Blood", Blood);
 			nbt.putDouble("BloodMax", BloodMax);
+			nbt.putDouble("InfinityCastleClearTimer", InfinityCastleClearTimer);
+			nbt.putString("Form1LimbTarget", Form1LimbTarget);
+			nbt.putString("Form2LimbTarget", Form2LimbTarget);
+			nbt.putString("Form3LimbTarget", Form3LimbTarget);
+			nbt.putString("Form4LimbTarget", Form4LimbTarget);
+			nbt.putString("Form5LimbTarget", Form5LimbTarget);
+			nbt.putString("Form6LimbTarget", Form6LimbTarget);
+			nbt.putString("Form7LimbTarget", Form7LimbTarget);
+			nbt.putString("Form8LimbTarget", Form8LimbTarget);
+			nbt.putBoolean("TransparentWorld", TransparentWorld);
+			nbt.putDouble("RightArmHealthMax", RightArmHealthMax);
+			nbt.putDouble("RightArmHealth", RightArmHealth);
+			nbt.putDouble("LeftArmHealthMax", LeftArmHealthMax);
+			nbt.putDouble("LeftArmHealth", LeftArmHealth);
+			nbt.putDouble("HeadMax", HeadMax);
+			nbt.putDouble("HeadHealth", HeadHealth);
+			nbt.putDouble("LeftLegHealth", LeftLegHealth);
+			nbt.putDouble("LeftLegHealthMax", LeftLegHealthMax);
+			nbt.putDouble("RightLegHealth", RightLegHealth);
+			nbt.putDouble("RightLegHealthMax", RightLegHealthMax);
+			nbt.putString("ActiveLimbTarget", ActiveLimbTarget);
+			nbt.putDouble("ActiveLimbTimer", ActiveLimbTimer);
+			nbt.putBoolean("LostRightArm", LostRightArm);
+			nbt.putBoolean("LostLeftArm", LostLeftArm);
+			nbt.putBoolean("LostRightLeg", LostRightLeg);
+			nbt.putBoolean("LostLeftLeg", LostLeftLeg);
+			nbt.putBoolean("LostHead", LostHead);
 			return nbt;
 		}
 
@@ -587,30 +683,66 @@ public class CraftnoyaibaModVariables {
 			BloodDemonArt = nbt.getString("BloodDemonArt");
 			Blood = nbt.getDouble("Blood");
 			BloodMax = nbt.getDouble("BloodMax");
+			InfinityCastleClearTimer = nbt.getDouble("InfinityCastleClearTimer");
+			Form1LimbTarget = nbt.getString("Form1LimbTarget");
+			Form2LimbTarget = nbt.getString("Form2LimbTarget");
+			Form3LimbTarget = nbt.getString("Form3LimbTarget");
+			Form4LimbTarget = nbt.getString("Form4LimbTarget");
+			Form5LimbTarget = nbt.getString("Form5LimbTarget");
+			Form6LimbTarget = nbt.getString("Form6LimbTarget");
+			Form7LimbTarget = nbt.getString("Form7LimbTarget");
+			Form8LimbTarget = nbt.getString("Form8LimbTarget");
+			TransparentWorld = nbt.getBoolean("TransparentWorld");
+			RightArmHealthMax = nbt.getDouble("RightArmHealthMax");
+			RightArmHealth = nbt.getDouble("RightArmHealth");
+			LeftArmHealthMax = nbt.getDouble("LeftArmHealthMax");
+			LeftArmHealth = nbt.getDouble("LeftArmHealth");
+			HeadMax = nbt.getDouble("HeadMax");
+			HeadHealth = nbt.getDouble("HeadHealth");
+			LeftLegHealth = nbt.getDouble("LeftLegHealth");
+			LeftLegHealthMax = nbt.getDouble("LeftLegHealthMax");
+			RightLegHealth = nbt.getDouble("RightLegHealth");
+			RightLegHealthMax = nbt.getDouble("RightLegHealthMax");
+			ActiveLimbTarget = nbt.getString("ActiveLimbTarget");
+			ActiveLimbTimer = nbt.getDouble("ActiveLimbTimer");
+			LostRightArm = nbt.getBoolean("LostRightArm");
+			LostLeftArm = nbt.getBoolean("LostLeftArm");
+			LostRightLeg = nbt.getBoolean("LostRightLeg");
+			LostLeftLeg = nbt.getBoolean("LostLeftLeg");
+			LostHead = nbt.getBoolean("LostHead");
 		}
 	}
 
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		CraftnoyaibaMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+	}
+
 	public static class PlayerVariablesSyncMessage {
+		private final int target;
 		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();
 			this.data.readNBT(buffer.readNbt());
+			this.target = buffer.readInt();
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
+		public PlayerVariablesSyncMessage(PlayerVariables data, int entityid) {
 			this.data = data;
+			this.target = entityid;
 		}
 
 		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
 			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+			buffer.writeInt(message.target);
 		}
 
 		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.AbilityOne = message.data.AbilityOne;
 					variables.AbilityTwo = message.data.AbilityTwo;
 					variables.AbilityThree = message.data.AbilityThree;
@@ -694,6 +826,33 @@ public class CraftnoyaibaModVariables {
 					variables.BloodDemonArt = message.data.BloodDemonArt;
 					variables.Blood = message.data.Blood;
 					variables.BloodMax = message.data.BloodMax;
+					variables.InfinityCastleClearTimer = message.data.InfinityCastleClearTimer;
+					variables.Form1LimbTarget = message.data.Form1LimbTarget;
+					variables.Form2LimbTarget = message.data.Form2LimbTarget;
+					variables.Form3LimbTarget = message.data.Form3LimbTarget;
+					variables.Form4LimbTarget = message.data.Form4LimbTarget;
+					variables.Form5LimbTarget = message.data.Form5LimbTarget;
+					variables.Form6LimbTarget = message.data.Form6LimbTarget;
+					variables.Form7LimbTarget = message.data.Form7LimbTarget;
+					variables.Form8LimbTarget = message.data.Form8LimbTarget;
+					variables.TransparentWorld = message.data.TransparentWorld;
+					variables.RightArmHealthMax = message.data.RightArmHealthMax;
+					variables.RightArmHealth = message.data.RightArmHealth;
+					variables.LeftArmHealthMax = message.data.LeftArmHealthMax;
+					variables.LeftArmHealth = message.data.LeftArmHealth;
+					variables.HeadMax = message.data.HeadMax;
+					variables.HeadHealth = message.data.HeadHealth;
+					variables.LeftLegHealth = message.data.LeftLegHealth;
+					variables.LeftLegHealthMax = message.data.LeftLegHealthMax;
+					variables.RightLegHealth = message.data.RightLegHealth;
+					variables.RightLegHealthMax = message.data.RightLegHealthMax;
+					variables.ActiveLimbTarget = message.data.ActiveLimbTarget;
+					variables.ActiveLimbTimer = message.data.ActiveLimbTimer;
+					variables.LostRightArm = message.data.LostRightArm;
+					variables.LostLeftArm = message.data.LostLeftArm;
+					variables.LostRightLeg = message.data.LostRightLeg;
+					variables.LostLeftLeg = message.data.LostLeftLeg;
+					variables.LostHead = message.data.LostHead;
 				}
 			});
 			context.setPacketHandled(true);

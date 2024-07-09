@@ -12,14 +12,23 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.craftnoyaiba.world.inventory.AbilitySelectionMenu;
+import net.mcreator.craftnoyaiba.procedures.Skill8TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill8DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill7TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill7DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill6TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill6DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill5TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill5DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill4TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill4DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill3TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill3DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill2TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill2DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.Skill1TooltipProcedure;
 import net.mcreator.craftnoyaiba.procedures.Skill1DisplayProcedure;
+import net.mcreator.craftnoyaiba.procedures.LimbTargetConditionProcedure;
 import net.mcreator.craftnoyaiba.network.AbilitySelectionButtonMessage;
 import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
@@ -60,6 +69,30 @@ public class AbilitySelectionScreen extends AbstractContainerScreen<AbilitySelec
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + -29 && mouseY < topPos + -5)
+				guiGraphics.renderTooltip(font, Component.literal(Skill1TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + -11 && mouseY < topPos + 13)
+				guiGraphics.renderTooltip(font, Component.literal(Skill2TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 7 && mouseY < topPos + 31)
+				guiGraphics.renderTooltip(font, Component.literal(Skill3TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 25 && mouseY < topPos + 49)
+				guiGraphics.renderTooltip(font, Component.literal(Skill4TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 43 && mouseY < topPos + 67)
+				guiGraphics.renderTooltip(font, Component.literal(Skill5TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 61 && mouseY < topPos + 85)
+				guiGraphics.renderTooltip(font, Component.literal(Skill6TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 79 && mouseY < topPos + 103)
+				guiGraphics.renderTooltip(font, Component.literal(Skill7TooltipProcedure.execute(entity)), mouseX, mouseY);
+		if (LimbTargetConditionProcedure.execute(entity))
+			if (mouseX > leftPos + -163 && mouseX < leftPos + -139 && mouseY > topPos + 97 && mouseY < topPos + 121)
+				guiGraphics.renderTooltip(font, Component.literal(Skill8TooltipProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -111,11 +144,6 @@ public class AbilitySelectionScreen extends AbstractContainerScreen<AbilitySelec
 		guiGraphics.drawString(this.font,
 
 				Skill8DisplayProcedure.execute(entity), -181, 106, -1, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

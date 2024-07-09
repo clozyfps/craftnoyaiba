@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"stringperformanceactive": {
+			"animation_length": 0.1667,
+			"bones": {
+				"torso": {
+					"rotation": {
+						"vector": [7.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -0.25, -1.5]
+					}
+				},
+				"head": {
+					"position": {
+						"vector": [0, -1, -2]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"vector": [-1.65883, 12.59851, 81.96226]
+					},
+					"position": {
+						"vector": [-0.75, -1, -1.5]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [-1.65883, -12.59851, -81.96226]
+					},
+					"position": {
+						"vector": [0.75, -1, -1.5]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "a2i2e_layer_2",
+    "customModelName": "hairo_gun:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Rifle",
+    "specialInformation": {
+      "fixedValue": [
+        "§lSpecial Nichirin Rifle"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:YaibaWeapons"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.2,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "RifleRightclicked"
+    }
+  }
+}

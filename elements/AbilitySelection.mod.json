@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -255,6 +255,142 @@
           "height": 20,
           "x": 393,
           "y": 8
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_1_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill1Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 8
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_2_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill2Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 26
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_3_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill3Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 44
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_4_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill4Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 62
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_5_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill5Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_6_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill6Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_7_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill7Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 116
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_skill_8_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "Skill8Tooltip"
+          },
+          "displayCondition": {
+            "name": "LimbTargetCondition"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 51,
+          "y": 134
         }
       }
     ],

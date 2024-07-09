@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "t_pose",
+    "texture": "catonthestreet",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

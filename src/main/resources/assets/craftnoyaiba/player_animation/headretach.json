@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"headretach": {
+			"animation_length": 0.0833,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": {
+							"vector": [0, -34, 0]
+						},
+						"0.0833": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"open_door": {
+			"animation_length": 1.5,
+			"bones": {
+				"bone3": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-10.33333, 0, 0]
+						}
+					}
+				},
+				"bone4": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [10, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"dooridle": {
+			"loop": true,
+			"bones": {
+				"bone3": {
+					"position": {
+						"vector": [-11, 0, 0]
+					}
+				},
+				"bone4": {
+					"position": {
+						"vector": [10, 0, 0]
+					}
+				}
+			}
+		},
+		"close_door": {
+			"animation_length": 0.3333,
+			"bones": {
+				"bone3": {
+					"position": {
+						"0.0": {
+							"vector": [-11, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bone4": {
+					"position": {
+						"0.0": {
+							"vector": [10, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

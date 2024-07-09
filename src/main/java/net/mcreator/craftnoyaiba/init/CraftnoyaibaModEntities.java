@@ -17,13 +17,20 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.craftnoyaiba.entity.ThunderClapAndFlashMobEntity;
+import net.mcreator.craftnoyaiba.entity.TCAFThunderGodEntity;
 import net.mcreator.craftnoyaiba.entity.TCAFProjectileEntity;
 import net.mcreator.craftnoyaiba.entity.RockEntity;
+import net.mcreator.craftnoyaiba.entity.RifleProjectileEntity;
 import net.mcreator.craftnoyaiba.entity.KiriyaUbuyashikiEntity;
 import net.mcreator.craftnoyaiba.entity.KanataUbuyashikiEntity;
 import net.mcreator.craftnoyaiba.entity.KaigakuHumanEntity;
 import net.mcreator.craftnoyaiba.entity.JigoroKuwajimaEntity;
+import net.mcreator.craftnoyaiba.entity.InfinityCastleDoorUpsideDownEntity;
+import net.mcreator.craftnoyaiba.entity.InfinityCastleDoorEntity;
 import net.mcreator.craftnoyaiba.entity.HeatLightningStartEntity;
+import net.mcreator.craftnoyaiba.entity.GodspeedTCAFEntity;
+import net.mcreator.craftnoyaiba.entity.FlamingThunderGodEntity;
+import net.mcreator.craftnoyaiba.entity.FlameFirstFormEntity;
 import net.mcreator.craftnoyaiba.entity.FinalSelectionDemonEntity;
 import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
@@ -34,18 +41,18 @@ public class CraftnoyaibaModEntities {
 			EntityType.Builder.<JigoroKuwajimaEntity>of(JigoroKuwajimaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JigoroKuwajimaEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
+	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("rock",
 			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<KaigakuHumanEntity>> KAIGAKU_HUMAN = register("kaigaku_human",
 			EntityType.Builder.<KaigakuHumanEntity>of(KaigakuHumanEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KaigakuHumanEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<TCAFProjectileEntity>> TCAF_PROJECTILE = register("projectile_tcaf_projectile",
+	public static final RegistryObject<EntityType<TCAFProjectileEntity>> TCAF_PROJECTILE = register("tcaf_projectile",
 			EntityType.Builder.<TCAFProjectileEntity>of(TCAFProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TCAFProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ThunderClapAndFlashMobEntity>> THUNDER_CLAP_AND_FLASH_MOB = register("thunder_clap_and_flash_mob",
 			EntityType.Builder.<ThunderClapAndFlashMobEntity>of(ThunderClapAndFlashMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(ThunderClapAndFlashMobEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HeatLightningStartEntity>> HEAT_LIGHTNING_START = register("projectile_heat_lightning_start", EntityType.Builder.<HeatLightningStartEntity>of(HeatLightningStartEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<HeatLightningStartEntity>> HEAT_LIGHTNING_START = register("heat_lightning_start", EntityType.Builder.<HeatLightningStartEntity>of(HeatLightningStartEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(HeatLightningStartEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FinalSelectionDemonEntity>> FINAL_SELECTION_DEMON = register("final_selection_demon",
 			EntityType.Builder.<FinalSelectionDemonEntity>of(FinalSelectionDemonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FinalSelectionDemonEntity::new)
@@ -59,6 +66,23 @@ public class CraftnoyaibaModEntities {
 			EntityType.Builder.<KanataUbuyashikiEntity>of(KanataUbuyashikiEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KanataUbuyashikiEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<InfinityCastleDoorEntity>> INFINITY_CASTLE_DOOR = register("infinity_castle_door", EntityType.Builder.<InfinityCastleDoorEntity>of(InfinityCastleDoorEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InfinityCastleDoorEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<InfinityCastleDoorUpsideDownEntity>> INFINITY_CASTLE_DOOR_UPSIDE_DOWN = register("infinity_castle_door_upside_down",
+			EntityType.Builder.<InfinityCastleDoorUpsideDownEntity>of(InfinityCastleDoorUpsideDownEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(InfinityCastleDoorUpsideDownEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RifleProjectileEntity>> RIFLE_PROJECTILE = register("rifle_projectile", EntityType.Builder.<RifleProjectileEntity>of(RifleProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(RifleProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlameFirstFormEntity>> FLAME_FIRST_FORM = register("flame_first_form", EntityType.Builder.<FlameFirstFormEntity>of(FlameFirstFormEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlameFirstFormEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GodspeedTCAFEntity>> GODSPEED_TCAF = register("godspeed_tcaf",
+			EntityType.Builder.<GodspeedTCAFEntity>of(GodspeedTCAFEntity::new, MobCategory.MISC).setCustomClientFactory(GodspeedTCAFEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlamingThunderGodEntity>> FLAMING_THUNDER_GOD = register("flaming_thunder_god", EntityType.Builder.<FlamingThunderGodEntity>of(FlamingThunderGodEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlamingThunderGodEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TCAFThunderGodEntity>> TCAF_THUNDER_GOD = register("tcaf_thunder_god",
+			EntityType.Builder.<TCAFThunderGodEntity>of(TCAFThunderGodEntity::new, MobCategory.MISC).setCustomClientFactory(TCAFThunderGodEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -73,6 +97,10 @@ public class CraftnoyaibaModEntities {
 			FinalSelectionDemonEntity.init();
 			KiriyaUbuyashikiEntity.init();
 			KanataUbuyashikiEntity.init();
+			InfinityCastleDoorEntity.init();
+			InfinityCastleDoorUpsideDownEntity.init();
+			FlameFirstFormEntity.init();
+			FlamingThunderGodEntity.init();
 		});
 	}
 
@@ -84,5 +112,9 @@ public class CraftnoyaibaModEntities {
 		event.put(FINAL_SELECTION_DEMON.get(), FinalSelectionDemonEntity.createAttributes().build());
 		event.put(KIRIYA_UBUYASHIKI.get(), KiriyaUbuyashikiEntity.createAttributes().build());
 		event.put(KANATA_UBUYASHIKI.get(), KanataUbuyashikiEntity.createAttributes().build());
+		event.put(INFINITY_CASTLE_DOOR.get(), InfinityCastleDoorEntity.createAttributes().build());
+		event.put(INFINITY_CASTLE_DOOR_UPSIDE_DOWN.get(), InfinityCastleDoorUpsideDownEntity.createAttributes().build());
+		event.put(FLAME_FIRST_FORM.get(), FlameFirstFormEntity.createAttributes().build());
+		event.put(FLAMING_THUNDER_GOD.get(), FlamingThunderGodEntity.createAttributes().build());
 	}
 }

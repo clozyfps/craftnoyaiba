@@ -6,6 +6,8 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
@@ -15,6 +17,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
+import net.mcreator.craftnoyaiba.init.CraftnoyaibaModItems;
 
 import javax.annotation.Nullable;
 
@@ -43,6 +46,16 @@ public class RenderProcedure {
 				}
 				new com.kleiders.kleidersplayerrenderer.ClassicPlayerRenderer(new EntityRendererProvider.Context(dis, mc.getItemRenderer(), mc.getBlockRenderer(), dis.getItemInHandRenderer(), mc.getResourceManager(), mc.getEntityModels(), mc.font),
 						new ResourceLocation("craftnoyaiba:textures/entities/uppermoon_eyes_daki.png"))
+						.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
+			}
+		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CraftnoyaibaModItems.TEST.get())) : false) {
+			if (_evt.getRenderer() instanceof PlayerRenderer) {
+				if (_evt instanceof RenderLivingEvent.Pre) {
+					// _evt.setCanceled(true);
+				}
+				new com.kleiders.kleidersplayerrenderer.ClassicPlayerRenderer(new EntityRendererProvider.Context(dis, mc.getItemRenderer(), mc.getBlockRenderer(), dis.getItemInHandRenderer(), mc.getResourceManager(), mc.getEntityModels(), mc.font),
+						new ResourceLocation("craftnoyaiba:textures/entities/mistmark_layer_1.png"))
 						.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 			}
 		}

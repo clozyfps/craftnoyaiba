@@ -73,11 +73,6 @@ public class MenuScreen extends AbstractContainerScreen<MenuMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_ssl = new PlainTextButton(this.leftPos + 179, this.topPos + -29, 46, 20, Component.translatable("gui.craftnoyaiba.menu.button_ssl"), e -> {

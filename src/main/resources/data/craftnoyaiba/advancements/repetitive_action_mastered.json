@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "repetitive_action_mastered": {
+    "repetitive_action_mastered_0": {
       "trigger": "minecraft:impossible"
     }
   },

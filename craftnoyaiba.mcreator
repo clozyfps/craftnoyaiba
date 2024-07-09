@@ -628,20 +628,6 @@
       "path": "~/GUI"
     },
     {
-      "name": "BreathingSword",
-      "type": "tag",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "breathing_sword",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/craftnoyaiba/tags/items/breathing_sword.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "Parry",
       "type": "procedure",
       "sortid": 29,
@@ -1047,30 +1033,6 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "RunAnim",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "run_anim",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/procedures/RunAnimProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2754,46 +2716,6 @@
       "path": "~/Particles"
     },
     {
-      "name": "TCAFProjectileWhileProjectileFlyingTick",
-      "type": "procedure",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tcaf_projectile_while_projectile_flying_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFProjectileWhileProjectileFlyingTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Skills/SubProcedures"
-    },
-    {
       "name": "TCAFProjectile",
       "type": "projectile",
       "sortid": 131,
@@ -2822,6 +2744,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2986,7 +2924,7 @@
           }
         ]
       },
-      "path": "~/Mobs/Misc"
+      "path": "~/Mobs/Misc/Procedures"
     },
     {
       "name": "TCAFActiveEffectStartedapplied",
@@ -2999,7 +2937,16 @@
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFActiveEffectStartedappliedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Potion/Procedures"
     },
@@ -3169,35 +3116,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "HeatLightning",
-      "type": "achievement",
-      "sortid": 150,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heat_lightning",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/craftnoyaiba/advancements/heat_lightning.json"
-        ]
-      },
-      "path": "~/Advancements/Thunder"
-    },
-    {
-      "name": "WaterNichirinSword",
-      "type": "tool",
-      "sortid": 151,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "water_nichirin_sword",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/item/WaterNichirinSwordItem.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/water_nichirin_sword.json"
-        ]
-      },
-      "path": "~/Weapons"
     },
     {
       "name": "RandomTrait",
@@ -4100,6 +4018,7 @@
         "files": [
           "src/main/resources/assets/craftnoyaiba/models/block/wisteria.json",
           "src/main/java/net/mcreator/craftnoyaiba/block/WisteriaBlock.java",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/wisteria.json",
           "src/main/resources/assets/craftnoyaiba/blockstates/wisteria.json",
           "src/main/resources/assets/craftnoyaiba/models/item/wisteria.json"
         ]
@@ -4130,6 +4049,7 @@
           "src/main/resources/assets/craftnoyaiba/models/item/demon_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/blockstates/demon_spawn_point.json",
           "src/main/java/net/mcreator/craftnoyaiba/block/DemonSpawnPointBlock.java",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/demon_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/models/block/demon_spawn_point.json"
         ]
       },
@@ -4180,6 +4100,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/entity/FinalSelectionDemonEntity.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/final_selection_demon_spawn_egg.json",
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FinalSelectionDemonRenderer.java"
         ]
       },
@@ -4282,6 +4203,7 @@
       "registry_name": "muzan_spawn_point",
       "metadata": {
         "files": [
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/muzan_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/models/block/muzan_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/blockstates/muzan_spawn_point.json",
           "src/main/java/net/mcreator/craftnoyaiba/block/MuzanSpawnPointBlock.java",
@@ -4301,24 +4223,7 @@
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/procedures/MuzanSpawnPointUpdateTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Blocks/Procedures"
     },
@@ -4331,9 +4236,7 @@
       "registry_name": "infinity_castle_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/biome/infinity_castle_biome.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/infinity_castle_biome_tree.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/infinity_castle_biome_tree.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/biome/infinity_castle_biome.json"
         ]
       },
       "path": "~/Biomes"
@@ -4367,6 +4270,410 @@
         ],
         "dependencies": [
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Procedures"
+    },
+    {
+      "name": "InfinityFortress",
+      "type": "dimension",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_fortress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/world/dimension/InfinityFortressDimension.java",
+          "src/main/resources/data/craftnoyaiba/dimension/infinity_fortress.json",
+          "src/main/resources/data/craftnoyaiba/dimension_type/infinity_fortress.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "FinalSelectionDemonDisplayCondition",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection_demon_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FinalSelectionDemonDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "FinalSelectionDemonDisplayCondition2",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection_demon_display_condition_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FinalSelectionDemonDisplayCondition2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "FinalSelectionDemonDisplayCondition3",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "final_selection_demon_display_condition_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FinalSelectionDemonDisplayCondition3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "InfinityCastleBridgeHouse",
+      "type": "structure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_bridge_house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_bridge_house.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_bridge_house.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_bridge_house.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleHouseConnector",
+      "type": "structure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_house_connector",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_house_connector.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_house_connector.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_house_connector.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastlePlatform",
+      "type": "structure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_platform",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_platform.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_platform.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_platform.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "House3",
+      "type": "structure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "house_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/house_3.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/house_3.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/house_3.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleBlockRemove",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_block_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityCastleBlockRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "AssignedRanks",
+      "type": "gamerule",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assigned_ranks",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Gamerules"
+    },
+    {
+      "name": "InfinityCastleMultiBridge",
+      "type": "structure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_multi_bridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_multi_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_multi_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_multi_bridge.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleConnectingHouses",
+      "type": "structure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_connecting_houses",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_houses.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_houses.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_connecting_houses.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleConnectingHouse2",
+      "type": "structure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_connecting_house_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_house_2.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_connecting_house_2.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_house_2.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleHallway",
+      "type": "structure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_hallway",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_hallway.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_hallway.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_hallway.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleHouse",
+      "type": "structure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_house.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_house.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_house.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleHouse2",
+      "type": "structure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_house_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_house_2.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_house_2.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_house_2.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleBridge",
+      "type": "structure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_bridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_bridge.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleHut",
+      "type": "structure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_hut",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_hut.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_hut.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_hut.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "InfinityCastleDoor",
+      "type": "animatedentity",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/InfinityCastleDoorModel.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/InfinityCastleDoorEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorRenderer.java"
+        ]
+      },
+      "path": "~/Mobs/Misc"
+    },
+    {
+      "name": "InfinityCastleDoorPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_door_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityCastleDoorPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Procedures"
+    },
+    {
+      "name": "InfinityCastleDoorOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_door_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityCastleDoorOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -4388,23 +4695,2492 @@
           }
         ]
       },
-      "path": "~/Dimensions"
+      "path": "~/Mobs/Misc/Procedures"
     },
     {
-      "name": "InfinityFortress",
-      "type": "dimension",
-      "sortid": 209,
+      "name": "TheInfinityCastle",
+      "type": "achievement",
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "infinity_fortress",
+      "registry_name": "the_infinity_castle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/world/dimension/InfinityFortressDimension.java",
-          "src/main/resources/data/craftnoyaiba/dimension/infinity_fortress.json",
-          "src/main/resources/data/craftnoyaiba/dimension_type/infinity_fortress.json"
+          "src/main/resources/data/craftnoyaiba/advancements/the_infinity_castle.json"
         ]
       },
-      "path": "~/Dimensions"
+      "path": "~/Advancements"
+    },
+    {
+      "name": "InfinityCastleDoorUpsideDownPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_door_upside_down_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityCastleDoorUpsideDownPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Procedures"
+    },
+    {
+      "name": "InfinityCastleDoorUpsideDown",
+      "type": "animatedentity",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_door_upside_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/InfinityCastleDoorUpsideDownModel.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/InfinityCastleDoorUpsideDownEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorUpsideDownRenderer.java"
+        ]
+      },
+      "path": "~/Mobs/Misc"
+    },
+    {
+      "name": "InfinityCastleVoidDamage",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_castle_void_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfinityCastleVoidDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "InfCastleClearTimer",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inf_castle_clear_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/InfCastleClearTimerProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RifleProjectile",
+      "type": "projectile",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/RifleProjectileEntity.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RifleRightclicked",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/RifleRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Procedures"
+    },
+    {
+      "name": "Rifle",
+      "type": "tool",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/item/RifleItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/rifle.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RifleProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rifle_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/RifleProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Procedures"
+    },
+    {
+      "name": "YaibaWeapons",
+      "type": "tab",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_weapons",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "PistolRightclicked",
+      "type": "procedure",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/PistolRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Procedures"
+    },
+    {
+      "name": "Pistol",
+      "type": "tool",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/item/pistol.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/PistolItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Khakkhara",
+      "type": "tool",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "khakkhara",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/item/KhakkharaItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/khakkhara.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ThunderBDASkills",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_bda_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ThunderBDASkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Skills"
+    },
+    {
+      "name": "TeslaActiveOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_active_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TeslaActiveOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "TeslaActive",
+      "type": "potioneffect",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/TeslaActiveMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "GroundSlamOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_slam_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/GroundSlamOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "GroundSlamEffectExpires",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_slam_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/GroundSlamEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "GroundSlam",
+      "type": "potioneffect",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_slam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/GroundSlamMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "SetThunderBDA",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_thunder_bda",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SetThunderBDAProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetBlood",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SetBloodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "MainOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/MainOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "FlameFirstFormOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_first_form_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FlameFirstFormOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Flame"
+    },
+    {
+      "name": "FlameFirstForm",
+      "type": "animatedentity",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_first_form",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FlameFirstFormRenderer.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/FlameFirstFormEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlameFirstFormModel.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/layer/FlameFirstFormLayer.java"
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Flame"
+    },
+    {
+      "name": "FlameFirstFormOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_first_form_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FlameFirstFormOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Flame"
+    },
+    {
+      "name": "Skill1Tooltip",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_1_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill1TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "LimbTargetCondition",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limb_target_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/LimbTargetConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill2Tooltip",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_2_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill2TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill3Tooltip",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_3_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill3TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill4Tooltip",
+      "type": "procedure",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_4_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill4TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill5Tooltip",
+      "type": "procedure",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_5_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill5TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill6Tooltip",
+      "type": "procedure",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_6_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill6TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill7Tooltip",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_7_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill7TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Skill8Tooltip",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_8_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/Skill8TooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "DemonLimbDamage",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_limb_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/DemonLimbDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HeadRegeneration",
+      "type": "achievement",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "head_regeneration",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/advancements/head_regeneration.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "HeadRegenerationTimer",
+      "type": "potioneffect",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "head_regeneration_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/HeadRegenerationTimerMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "RegenerationTimer",
+      "type": "potioneffect",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regeneration_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/RegenerationTimerMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "DemonLimbTick",
+      "type": "procedure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_limb_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/DemonLimbTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RegenerationTimerEffectExpires",
+      "type": "procedure",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regeneration_timer_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/RegenerationTimerEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "TCAFProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "OpeningThread",
+      "type": "achievement",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opening_thread",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/advancements/opening_thread.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DemonSlayer",
+      "type": "achievement",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_slayer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/advancements/demon_slayer.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "OpeningThreadTick",
+      "type": "procedure",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opening_thread_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/OpeningThreadTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BasicNichirinSwordEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_nichirin_sword_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BasicNichirinSwordEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Procedures"
+    },
+    {
+      "name": "ActiveLimbTimer",
+      "type": "procedure",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_limb_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ActiveLimbTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TrainingSword",
+      "type": "tool",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "training_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/item/TrainingSwordItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/training_sword.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "SwingClash",
+      "type": "procedure",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swing_clash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SwingClashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HeadDisplay",
+      "type": "procedure",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "head_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/HeadDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "RightArmDisplay",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_arm_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/RightArmDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "SpecialThunderNichirin",
+      "type": "tool",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_thunder_nichirin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/item/special_thunder_nichirin.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/SpecialThunderNichirinItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "KaigakuHumanOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaigaku_human_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/KaigakuHumanOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "DemonLimbRestore",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_limb_restore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/DemonLimbRestoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ImpactFrame",
+      "type": "potioneffect",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "impact_frame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/ImpactFrameMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "ImpactFrameTick",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "impact_frame_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ImpactFrameTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "YellowElectricity",
+      "type": "particle",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_electricity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/client/particle/YellowElectricityParticle.java",
+          "src/main/resources/assets/craftnoyaiba/particles/yellow_electricity.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "BlueElectricity",
+      "type": "particle",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_electricity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/client/particle/BlueElectricityParticle.java",
+          "src/main/resources/assets/craftnoyaiba/particles/blue_electricity.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "ThunderClapAndFlashSixFold",
+      "type": "achievement",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_clap_and_flash_six_fold",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/advancements/thunder_clap_and_flash_six_fold.json"
+        ]
+      },
+      "path": "~/Advancements/Thunder"
+    },
+    {
+      "name": "GodspeedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godspeed_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/GodspeedOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "GodspeedTCAFWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godspeed_tcaf_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/GodspeedTCAFWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "GodspeedTCAF",
+      "type": "projectile",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "godspeed_tcaf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/GodspeedTCAFEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "FloatingRock",
+      "type": "particle",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floating_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/particles/floating_rock.json",
+          "src/main/java/net/mcreator/craftnoyaiba/client/particle/FloatingRockParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "PreSixFoldOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_six_fold_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/PreSixFoldOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "PreSixFoldEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_six_fold_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/PreSixFoldEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "PreSixFold",
+      "type": "potioneffect",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_six_fold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/PreSixFoldMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "FlamingThunderGod",
+      "type": "animatedentity",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_thunder_god",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/FlamingThunderGodEntity.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/flaming_thunder_god_spawn_egg.json",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FlamingThunderGodRenderer.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlamingThunderGodModel.java"
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Thunder"
+    },
+    {
+      "name": "TCAFThunderGodWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_thunder_god_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFThunderGodWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "TCAFThunderGod",
+      "type": "projectile",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_thunder_god",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/TCAFThunderGodEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "FlamingThunderGodOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_thunder_god_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FlamingThunderGodOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Flame"
+    },
+    {
+      "name": "FlamingThunderGodActiveOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_thunder_god_active_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FlamingThunderGodActiveOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "FlamingThunderGodActive",
+      "type": "potioneffect",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_thunder_god_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/FlamingThunderGodActiveMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "FlamingThunderGodActiveEffectExpires",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_thunder_god_active_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/FlamingThunderGodActiveEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Misc/Breathing/Thunder"
+    },
+    {
+      "name": "SoundNichirinSword",
+      "type": "tool",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_nichirin_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/item/SoundNichirinSwordItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/sound_nichirin_sword.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "SoundSkills",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SoundSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Skills"
+    },
+    {
+      "name": "OutwardsPoofOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outwards_poof_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/OutwardsPoofOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "OutwardsPoofEffectExpires",
+      "type": "procedure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outwards_poof_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/OutwardsPoofEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "OutwardsPoof",
+      "type": "potioneffect",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outwards_poof",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/OutwardsPoofMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "Roar",
+      "type": "procedure",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/RoarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Skills/SubProcedures"
+    },
+    {
+      "name": "SetSound",
+      "type": "procedure",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sound",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SetSoundProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures/Breathing"
+    },
+    {
+      "name": "StoneParticlePre",
+      "type": "particle",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_particle_pre",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/client/particle/StoneParticlePreParticle.java",
+          "src/main/resources/assets/craftnoyaiba/particles/stone_particle_pre.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "StoneRock",
+      "type": "particlemodel",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_rock",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "ConstantResoundingSlashesOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constant_resounding_slashes_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ConstantResoundingSlashesOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "ConstantResoundingSlashes",
+      "type": "potioneffect",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constant_resounding_slashes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/ConstantResoundingSlashesMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "StringPerformanceMoveOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "string_performance_move_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/StringPerformanceMoveOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "StringPerformanceMove",
+      "type": "potioneffect",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "string_performance_move",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/StringPerformanceMoveMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TcafendEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcafend_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TcafendEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "Tcafend",
+      "type": "potioneffect",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcafend",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/potion/TcafendMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "TCAFActiveOnEffectActiveTick2",
+      "type": "procedure",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_active_on_effect_active_tick_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFActiveOnEffectActiveTick2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "TCAFActiveEffectExpires",
+      "type": "procedure",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_active_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFActiveEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "TCAFActiveEffectExpires2",
+      "type": "procedure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcaf_active_effect_expires_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/TCAFActiveEffectExpires2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "BreatheBar1",
+      "type": "procedure",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar2",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar3",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar4",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar5",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar6",
+      "type": "procedure",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar7",
+      "type": "procedure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar1",
+      "type": "procedure",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar2",
+      "type": "procedure",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar3",
+      "type": "procedure",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar4",
+      "type": "procedure",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar5",
+      "type": "procedure",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar6",
+      "type": "procedure",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar7",
+      "type": "procedure",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BreatheBar0",
+      "type": "procedure",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breathe_bar_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BreatheBar0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "BloodBar0",
+      "type": "procedure",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_bar_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/BloodBar0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "MainOverlayDisplayOverlayIngame2",
+      "type": "procedure",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_overlay_display_overlay_ingame_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/MainOverlayDisplayOverlayIngame2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "StringPerformanceMoveEffectExpires",
+      "type": "procedure",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "string_performance_move_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/StringPerformanceMoveEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "DemonLimbRestored",
+      "type": "procedure",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_limb_restored",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/DemonLimbRestoredProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -4898,18 +7674,180 @@
       "name": "Blood",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "BloodMax",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "15.0"
     },
     {
       "name": "InfinityCastleSpawned",
       "type": "logic",
       "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "InfinityCastleClearTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Form1LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form2LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form3LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form4LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form5LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form6LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form7LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Form8LimbTarget",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TransparentWorld",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RightArmHealthMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RightArmHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "LeftArmHealthMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "LeftArmHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HeadMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HeadHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "LeftLegHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "LeftLegHealthMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RightLegHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RightLegHealthMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ActiveLimbTarget",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "ActiveLimbTimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "LostRightArm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "LostLeftArm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "LostRightLeg",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "LostLeftLeg",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "LostHead",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -4961,20 +7899,153 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "infinitycastlesummon",
+      "files": [
+        "infinity_castle_theme_akaza_summoned_-_demon_slayer_season_2_episode_11_ost_epic_cover"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "uppermoonmeeting",
+      "files": [
+        "demon_slayer_swordsmith_village_arc_ost_-_infinity_castle_opening_theme_officialmp3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "limbcut",
+      "files": [
+        "bloody"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "swordblock",
+      "files": [
+        "clash"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "woodenblock",
+      "files": [
+        "woodenclash"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "level",
+      "files": [
+        "demonslayercard"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "waterbreathing",
+      "files": [
+        "waterbreathing"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:Town"
+    ],
+    "BLOCKS:mod:inf_castle_blocks_removed": [
+      "Blocks.FLOWING_LAVA",
+      "Blocks.LAVA",
+      "Blocks.STONE#1",
+      "Blocks.STONE#3",
+      "Blocks.COPPER_ORE",
+      "Blocks.BLACKSTONE",
+      "Blocks.DEEPSLATE_IRON_ORE",
+      "Blocks.DEEPSLATE",
+      "Blocks.REINFORCED_DEEPSLATE",
+      "Blocks.COBBLED_DEEPSLATE",
+      "Blocks.COBBLED_DEEPSLATE_STAIRS",
+      "Blocks.COBBLED_DEEPSLATE_SLAB",
+      "Blocks.COBBLED_DEEPSLATE_WALL",
+      "Blocks.POLISHED_DEEPSLATE",
+      "Blocks.POLISHED_DEEPSLATE_STAIRS",
+      "Blocks.POLISHED_DEEPSLATE_SLAB",
+      "Blocks.POLISHED_DEEPSLATE_WALL",
+      "Blocks.DEEPSLATE_TILES",
+      "Blocks.DEEPSLATE_TILE_STAIRS",
+      "Blocks.DEEPSLATE_TILE_SLAB",
+      "Blocks.DEEPSLATE_TILE_WALL",
+      "Blocks.DEEPSLATE_BRICKS",
+      "Blocks.DEEPSLATE_BRICK_STAIRS",
+      "Blocks.DEEPSLATE_BRICK_SLAB",
+      "Blocks.DEEPSLATE_BRICK_WALL",
+      "Blocks.CHISELED_DEEPSLATE",
+      "Blocks.CRACKED_DEEPSLATE_BRICKS",
+      "Blocks.CRACKED_DEEPSLATE_TILES",
+      "Blocks.DEEPSLATE_COAL_ORE",
+      "Blocks.DEEPSLATE_REDSTONE_ORE",
+      "Blocks.DEEPSLATE_GOLD_ORE",
+      "Blocks.DEEPSLATE_LAPIS_ORE",
+      "Blocks.DEEPSLATE_DIAMOND_ORE",
+      "Blocks.DEEPSLATE_EMERALD_ORE",
+      "Blocks.DEEPSLATE_COPPER_ORE",
+      "Blocks.MONSTER_EGG#6",
+      "Blocks.STONE#2",
+      "Blocks.GRANITE_STAIRS",
+      "Blocks.POLISHED_GRANITE_STAIRS",
+      "Blocks.GRANITE_SLAB",
+      "Blocks.POLISHED_GRANITE_SLAB",
+      "Blocks.GRANITE_WALL",
+      "Blocks.DIORITE_STAIRS",
+      "Blocks.DIORITE_SLAB",
+      "Blocks.DIORITE_WALL",
+      "Blocks.STONE#4",
+      "Blocks.POLISHED_DIORITE_SLAB",
+      "Blocks.POLISHED_DIORITE_STAIRS",
+      "Blocks.STONE#5",
+      "Blocks.ANDESITE_STAIRS",
+      "Blocks.ANDESITE_SLAB",
+      "Blocks.ANDESITE_WALL",
+      "Blocks.STONE#6",
+      "Blocks.POLISHED_ANDESITE_STAIRS",
+      "Blocks.POLISHED_ANDESITE_SLAB"
+    ],
+    "ITEMS:mod:breathing_sword": [
+      "Items.WOODEN_SWORD",
+      "Items.STONE_SWORD",
+      "Items.IRON_SWORD",
+      "Items.GOLDEN_SWORD",
+      "Items.DIAMOND_SWORD",
+      "Items.NETHERITE_SWORD"
+    ],
+    "ITEMS:mod:nichirins": [
+      "CUSTOM:SpecialThunderNichirin",
+      "CUSTOM:BasicNichirinSword",
+      "CUSTOM:ThunderNichirinSword"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.AIR"
+    ]
+  },
   "language_map": {
     "en_us": {
       "entity.craftnoyaiba.kanata_ubuyashiki": "Kanata Ubuyashiki",
-      "item.craftnoyaiba.gourd": "Gourd",
+      "entity.craftnoyaiba.flame_first_form": "Flame First Form",
       "gui.craftnoyaiba.create_ability.button_sslx2": "§lX",
+      "effect.craftnoyaiba.tcafend": "Tcafend",
       "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
       "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
       "item.craftnoyaiba.kiriya_ubuyashiki_spawn_egg": "Kiriya Ubuyashiki Spawn Egg",
       "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
       "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
-      "advancements.muzan_favorite.title": "Muzan\u0027s Favorite",
-      "biome.craftnoyaiba.fujikasane": "Fujikasane",
       "subtitles.biwa": "",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
@@ -4982,80 +8053,124 @@
       "advancements.repetitive_action.descr": "Speak to Himejima",
       "advancements.total_concentration_constant.descr": "Master the art of \"Total Concentration\"",
       "effect.craftnoyaiba.cooldown": "Cooldown",
-      "item.craftnoyaiba.kaigaku_human_spawn_egg": "Kaigaku (Human) Spawn Egg",
-      "advancements.repetitive_action.title": "Repetitive Action",
-      "advancements.total_concentration_constant.title": "Total Concentration: Constant",
+      "item.craftnoyaiba.special_thunder_nichirin": "Special Thunder Nichirin",
+      "item.craftnoyaiba.khakkhara": "Khakkhara",
+      "advancements.the_infinity_castle.title": "The Infinity Castle",
       "item_group.craftnoyaiba.yaiba_nichirins": "Yaiba Nichirins",
       "death.attack.breathing_damage.player": "%1$s died whilst trying to escape %2$s",
-      "subtitles.shock": "",
+      "advancements.opening_thread.title": "Opening Thread",
       "item_group.craftnoyaiba.yaiba_armors": "Yaiba Armors",
-      "item.craftnoyaiba.blade": "Blade",
-      "block.craftnoyaiba.muzan_spawn_point": "Muzan Spawn Point",
-      "block.craftnoyaiba.wisteria": "Wisteria",
       "gui.craftnoyaiba.menu.button_ssl": "§l\u003e\u003e",
-      "gui.craftnoyaiba.take_blood.button_take": "Take",
-      "gamerule.cnyAutoParry.description": "parry automatically",
-      "advancements.recovery_breathing.title": "Recovery Breathing",
+      "item.craftnoyaiba.training_sword": "Training Sword",
       "block.craftnoyaiba.demon_spawn_point": "Demon Spawn Point",
-      "advancements.demon.title": "Demon",
+      "item.craftnoyaiba.infinity_castle_door_spawn_egg": "Infinity Castle Door Spawn Egg",
+      "entity.craftnoyaiba.flaming_thunder_god": "Flaming Thunder God",
       "entity.craftnoyaiba.jigoro_kuwajima": "Jigoro Kuwajima",
+      "advancements.thunder_clap_and_flash_six_fold.title": "Thunder Clap And Flash Sixfold",
       "subtitles.heartbeat": "",
-      "gui.craftnoyaiba.create_ability.button_ssl3": "§l+",
-      "gui.craftnoyaiba.take_blood.BloodAmount": "Amount Of Blood In Demon Power",
-      "gui.craftnoyaiba.create_ability.button_ssl2": "§l+",
-      "key.craftnoyaiba.menu_open": "Menu",
-      "key.craftnoyaiba.breathe": "Breathe",
+      "item.craftnoyaiba.rifle": "Rifle",
       "effect.craftnoyaiba.stunned": "Stunned",
       "effect.craftnoyaiba.air_combo": "AirComboActive",
+      "effect.craftnoyaiba.outwards_poof": "Outwards Poof",
       "advancements.thunder_clap_and_flash.title": "Thunder Clap And Flash",
-      "effect.craftnoyaiba.electrified": "Electrified",
-      "effect.craftnoyaiba.decaying": "Decaying",
-      "advancements.craft_no_yaiba.descr": "Start Your Journey In Demon Slayer.",
-      "advancements.thunder_breathing.title": "Thunder Breathing",
-      "key.craftnoyaiba.switch_skill": "Switch Skill",
-      "gui.craftnoyaiba.create_ability.button_ssl1": "§l+",
+      "effect.craftnoyaiba.flaming_thunder_god_active": "Flaming Thunder God Active",
       "death.attack.breathing_damage": "%1$s was killed by a breathing technique",
       "effect.craftnoyaiba.asleep": "Asleep",
-      "item.craftnoyaiba.blood": "Blood",
-      "key.craftnoyaiba.parry_key": "Parry",
       "effect.craftnoyaiba.regen_stun": "Regeneration Stun",
-      "advancements.total_concentration.descr": "Get used to your breathing with many gourds.",
+      "subtitles.limbcut": "",
       "gamerule.cnyAutoParry": "cnyautoparry",
       "gui.craftnoyaiba.ability_selection.button_empty": "§l\u003e\u003e",
       "effect.craftnoyaiba.awaken_breath": "AwakenBreath",
       "entity.craftnoyaiba.kaigaku_human": "Kaigaku (Human)",
+      "advancements.head_regeneration.descr": "Unlock Head Regeneration As A Demon.",
       "advancements.total_concentration.title": "Total Concentration",
-      "gui.craftnoyaiba.create_ability.button_empty1": "§l\u003e\u003e",
       "advancements.demon.descr": "Become a Demon.",
-      "gui.craftnoyaiba.create_ability.button_empty": "§l+",
-      "key.craftnoyaiba.use_skill": "Use Skill",
       "item.craftnoyaiba.jigoro_kuwajima_spawn_egg": "Jigoro Kuwajima Spawn Egg",
-      "advancements.heat_lightning.descr": "Learn Heat Lightning",
       "item.craftnoyaiba.kanata_ubuyashiki_spawn_egg": "Kanata Ubuyashiki Spawn Egg",
-      "advancements.repetitive_action_mastered.descr": "Use Breathings 250 Times After Learning Repetitive Action",
-      "item.craftnoyaiba.water_nichirin_sword": "Water Nichirin Sword",
-      "item.craftnoyaiba.test": "Test",
+      "item.craftnoyaiba.final_selection_demon_spawn_egg": "Final Selection Demon Spawn Egg",
       "advancements.recovery_breathing.descr": "WIP",
       "item_group.craftnoyaiba.yaiba_humans": "Yaiba Humans",
-      "advancements.heat_lightning.title": "Heat Lightning",
-      "biome.craftnoyaiba.infinity_castle_biome": "Infinity Castle Biome",
+      "effect.craftnoyaiba.constant_resounding_slashes": "Constant Resounding Slashes",
       "advancements.repetitive_action_mastered.title": "Repetitive Action Mastered",
+      "subtitles.level": "",
       "item_group.craftnoyaiba.yaiba_trainers": "Yaiba Trainers",
+      "item.craftnoyaiba.flame_first_form_spawn_egg": "Flame First Form Spawn Egg",
+      "subtitles.breathingbegun": "",
+      "advancements.head_regeneration.title": "Head Regeneration",
+      "item.craftnoyaiba.flaming_thunder_god_spawn_egg": "Flaming Thunder God Spawn Egg",
+      "death.attack.breathing_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.craftnoyaiba.demon_slayer_uniform_chestplate": "Demon Slayer Uniform",
+      "advancements.thunder_breathing.descr": "Learn Thunder Breathing",
+      "item.craftnoyaiba.thunder_nichirin_sword": "Thunder Nichirin Sword",
+      "item.craftnoyaiba.pistol": "Pistol",
+      "item_group.craftnoyaiba.yaiba_blocks": "Yaiba Blocks",
+      "advancements.craft_no_yaiba.title": "Craft No Yaiba",
+      "subtitles.infinitycastlesummon": "",
+      "item.craftnoyaiba.gourd": "Gourd",
+      "effect.craftnoyaiba.ground_slam": "GroundSlam",
+      "biome.craftnoyaiba.fujikasane": "Fujikasane",
+      "advancements.muzan_favorite.title": "Muzan\u0027s Favorite",
+      "item.craftnoyaiba.kaigaku_human_spawn_egg": "Kaigaku (Human) Spawn Egg",
+      "advancements.repetitive_action.title": "Repetitive Action",
+      "advancements.opening_thread.descr": "Unlock The Opening Thread Skill",
+      "advancements.total_concentration_constant.title": "Total Concentration: Constant",
+      "advancements.the_infinity_castle.descr": "Enter The Infinity Fortress.",
+      "subtitles.shock": "",
+      "item.craftnoyaiba.blade": "Blade",
+      "block.craftnoyaiba.muzan_spawn_point": "Muzan Spawn Point",
+      "block.craftnoyaiba.wisteria": "Wisteria",
+      "entity.craftnoyaiba.infinity_castle_door": "Infinity Castle Door",
+      "effect.craftnoyaiba.tesla_active": "Tesla Active",
+      "gui.craftnoyaiba.take_blood.button_take": "Take",
+      "gamerule.cnyAutoParry.description": "parry automatically",
+      "advancements.recovery_breathing.title": "Recovery Breathing",
+      "advancements.demon.title": "Demon",
+      "gamerule.assignedRanks": "assignedranks",
+      "subtitles.uppermoonmeeting": "",
+      "subtitles.woodenblock": "",
+      "gui.craftnoyaiba.create_ability.button_ssl3": "§l+",
+      "gui.craftnoyaiba.take_blood.BloodAmount": "Amount Of Blood In Demon Power",
+      "gui.craftnoyaiba.create_ability.button_ssl2": "§l+",
+      "key.craftnoyaiba.menu_open": "Menu",
+      "subtitles.waterbreathing": "",
+      "key.craftnoyaiba.breathe": "Breathe",
+      "item_group.craftnoyaiba.yaiba_weapons": "Yaiba Weapons",
+      "effect.craftnoyaiba.electrified": "Electrified",
+      "effect.craftnoyaiba.decaying": "Decaying",
+      "advancements.craft_no_yaiba.descr": "Start Your Journey In Demon Slayer.",
+      "entity.craftnoyaiba.infinity_castle_door_upside_down": "Infinity Castle Door Upside Down",
+      "advancements.thunder_breathing.title": "Thunder Breathing",
+      "key.craftnoyaiba.switch_skill": "Switch Skill",
+      "gui.craftnoyaiba.create_ability.button_ssl1": "§l+",
+      "gamerule.assignedRanks.description": "Allows only 1 person to be in each rank (Upper Moon 6, Breathing Pillar, Etc)",
+      "effect.craftnoyaiba.regeneration_timer": "Regeneration Timer",
+      "item.craftnoyaiba.blood": "Blood",
+      "key.craftnoyaiba.parry_key": "Parry",
+      "advancements.total_concentration.descr": "Get used to your breathing with many gourds.",
+      "effect.craftnoyaiba.impact_frame": "Impact Frame",
+      "advancements.demon_slayer.title": "Demon Slayer",
+      "gui.craftnoyaiba.create_ability.button_empty1": "§l\u003e\u003e",
+      "gui.craftnoyaiba.create_ability.button_empty": "§l+",
+      "key.craftnoyaiba.use_skill": "Use Skill",
+      "advancements.repetitive_action_mastered.descr": "Use Breathings 250 Times After Learning Repetitive Action",
+      "item.craftnoyaiba.test": "Test",
+      "biome.craftnoyaiba.infinity_castle_biome": "Infinity Castle Biome",
+      "subtitles.swordblock": "",
       "biome.craftnoyaiba.town": "Town",
       "entity.craftnoyaiba.final_selection_demon": "Final Selection Demon",
       "effect.craftnoyaiba.tcaf_active": "TcafActive",
       "subtitles.stab": "",
-      "subtitles.breathingbegun": "",
+      "effect.craftnoyaiba.string_performance_move": "String Performance Move",
       "item.craftnoyaiba.demon_slayer_uniform_leggings": "Demon Slayer Uniform",
+      "advancements.thunder_clap_and_flash_six_fold.descr": "Learn Thunderclap And Flash: Sixfold",
+      "item.craftnoyaiba.sound_nichirin_sword": "Sound Nichirin Sword",
+      "effect.craftnoyaiba.head_regeneration_timer": "Head Regeneration Timer",
       "subtitles.clash": "",
-      "death.attack.breathing_damage.item": "%1$s was killed by %2$s using %3$s",
-      "item.craftnoyaiba.demon_slayer_uniform_chestplate": "Demon Slayer Uniform",
       "gui.craftnoyaiba.create_ability.button_sslx": "§lX",
-      "advancements.thunder_breathing.descr": "Learn Thunder Breathing",
-      "item.craftnoyaiba.thunder_nichirin_sword": "Thunder Nichirin Sword",
-      "advancements.craft_no_yaiba.title": "Craft No Yaiba",
+      "advancements.demon_slayer.descr": "Become a Demon Slayer",
+      "item.craftnoyaiba.infinity_castle_door_upside_down_spawn_egg": "Infinity Castle Door Upside Down Spawn Egg",
+      "effect.craftnoyaiba.pre_six_fold": "Pre Six Fold",
       "advancements.thunder_clap_and_flash.descr": "Learn Thunderclap And Flash",
-      "item_group.craftnoyaiba.yaiba_blocks": "Yaiba Blocks",
       "entity.craftnoyaiba.kiriya_ubuyashiki": "Kiriya Ubuyashiki"
     }
   },
@@ -5093,7 +8208,25 @@
           },
           {
             "name": "Misc",
-            "children": []
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              },
+              {
+                "name": "Breathing",
+                "children": [
+                  {
+                    "name": "Flame",
+                    "children": []
+                  },
+                  {
+                    "name": "Thunder",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -5201,7 +8334,12 @@
       },
       {
         "name": "Dimensions",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Creative Tabs",
@@ -5255,7 +8393,6 @@
     "author": "jayso, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [
       "kleiders_custom_renderer"
@@ -5264,13 +8401,13 @@
     "dependants": [],
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
+      "use_compiled_mods",
       "geckolib",
       "playeranimator"
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.craftnoyaiba",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.mcreator.craftnoyaiba"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400118518
 }

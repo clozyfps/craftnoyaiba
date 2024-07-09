@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bamboo_hanging_sign"
+    },
+    "title": {
+      "translate": "advancements.the_infinity_castle.title"
+    },
+    "description": {
+      "translate": "advancements.the_infinity_castle.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_infinity_castle_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "craftnoyaiba:demon"
+}

@@ -1,12 +1,19 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "structure",
   "definition": {
-    "structure": "infinitycastle",
+    "structure": "infbridgehouse",
     "projection": "rigid",
-    "ignoredBlocks": [],
-    "spacing": 5,
-    "separation": 2,
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 3,
+    "separation": 1,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:InfinityCastleBiome"
@@ -14,6 +21,9 @@
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "none",
-    "generationStep": "SURFACE_STRUCTURES"
+    "generationStep": "RAW_GENERATION",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
   }
 }

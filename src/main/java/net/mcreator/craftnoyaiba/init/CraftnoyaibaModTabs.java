@@ -21,15 +21,23 @@ import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CraftnoyaibaModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CraftnoyaibaMod.MODID);
-	public static final RegistryObject<CreativeModeTab> YAIBA_TRAINERS = REGISTRY.register("yaiba_trainers",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_trainers")).icon(() -> new ItemStack(CraftnoyaibaModItems.JIGORO_KUWAJIMA_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(CraftnoyaibaModItems.JIGORO_KUWAJIMA_SPAWN_EGG.get());
+	public static final RegistryObject<CreativeModeTab> YAIBA_WEAPONS = REGISTRY.register("yaiba_weapons",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_weapons")).icon(() -> new ItemStack(CraftnoyaibaModItems.RIFLE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CraftnoyaibaModItems.RIFLE.get());
+				tabData.accept(CraftnoyaibaModItems.PISTOL.get());
+				tabData.accept(CraftnoyaibaModItems.KHAKKHARA.get());
+				tabData.accept(CraftnoyaibaModItems.TRAINING_SWORD.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YAIBA_NICHIRINS = REGISTRY.register("yaiba_nichirins",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_nichirins")).icon(() -> new ItemStack(CraftnoyaibaModItems.BASIC_NICHIRIN_SWORD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CraftnoyaibaModItems.BASIC_NICHIRIN_SWORD.get());
 				tabData.accept(CraftnoyaibaModItems.THUNDER_NICHIRIN_SWORD.get());
-				tabData.accept(CraftnoyaibaModItems.WATER_NICHIRIN_SWORD.get());
+				tabData.accept(CraftnoyaibaModItems.SPECIAL_THUNDER_NICHIRIN.get());
+				tabData.accept(CraftnoyaibaModItems.SOUND_NICHIRIN_SWORD.get());
+			}).withSearchBar().build());
+	public static final RegistryObject<CreativeModeTab> YAIBA_TRAINERS = REGISTRY.register("yaiba_trainers",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_trainers")).icon(() -> new ItemStack(CraftnoyaibaModItems.JIGORO_KUWAJIMA_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CraftnoyaibaModItems.JIGORO_KUWAJIMA_SPAWN_EGG.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YAIBA_HUMANS = REGISTRY.register("yaiba_humans",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_humans")).icon(() -> new ItemStack(CraftnoyaibaModItems.KAIGAKU_HUMAN_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
@@ -40,13 +48,10 @@ public class CraftnoyaibaModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_CHESTPLATE.get());
 			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_LEGGINGS.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CraftnoyaibaModItems.GOURD.get());
 			tabData.accept(CraftnoyaibaModItems.BLADE.get());
 		}

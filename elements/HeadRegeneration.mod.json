@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Head Regeneration",
+    "achievementDescription": "Unlock Head Regeneration As A Demon.",
+    "achievementIcon": {
+      "value": "CUSTOM:Blood"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 4,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:Demon"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"38\" y=\"98\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "livingentity",
   "definition": {
     "mobName": "Final Selection Demon",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "demon1.png",
+    "mobModelTexture": "firstdemon.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -26,13 +26,13 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -9589318,
+      "value": -2373462,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3657680,
+      "value": -13948374,
       "falpha": 0.0
     },
     "creativeTab": {

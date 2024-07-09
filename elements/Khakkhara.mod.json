@@ -1,0 +1,35 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "a2i2e_layer_2",
+    "customModelName": "khakkara:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Khakkhara",
+    "specialInformation": {
+      "fixedValue": [
+        "§lGenerates Lightning With Thunder Blood Demon Art."
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:YaibaWeapons"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.7,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 1200,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

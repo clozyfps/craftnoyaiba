@@ -19,8 +19,8 @@ import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
 public class CraftnoyaibaModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, CraftnoyaibaMod.MODID);
-	public static final RegistryObject<MenuType<MenuMenu>> MENU = REGISTRY.register("menu", () -> IForgeMenuType.create(MenuMenu::new));
 	public static final RegistryObject<MenuType<CreateAbilityMenu>> CREATE_ABILITY = REGISTRY.register("create_ability", () -> IForgeMenuType.create(CreateAbilityMenu::new));
+	public static final RegistryObject<MenuType<MenuMenu>> MENU = REGISTRY.register("menu", () -> IForgeMenuType.create(MenuMenu::new));
 	public static final RegistryObject<MenuType<AbilitySelectionMenu>> ABILITY_SELECTION = REGISTRY.register("ability_selection", () -> IForgeMenuType.create(AbilitySelectionMenu::new));
 	public static final RegistryObject<MenuType<TakeBloodMenu>> TAKE_BLOOD = REGISTRY.register("take_blood", () -> IForgeMenuType.create(TakeBloodMenu::new));
 }

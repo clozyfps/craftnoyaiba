@@ -21,4 +21,11 @@ public class CraftnoyaibaModSounds {
 	public static final RegistryObject<SoundEvent> SHOCK = REGISTRY.register("shock", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "shock")));
 	public static final RegistryObject<SoundEvent> STAB = REGISTRY.register("stab", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "stab")));
 	public static final RegistryObject<SoundEvent> BIWA = REGISTRY.register("biwa", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "biwa")));
+	public static final RegistryObject<SoundEvent> INFINITYCASTLESUMMON = REGISTRY.register("infinitycastlesummon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "infinitycastlesummon")));
+	public static final RegistryObject<SoundEvent> UPPERMOONMEETING = REGISTRY.register("uppermoonmeeting", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "uppermoonmeeting")));
+	public static final RegistryObject<SoundEvent> LIMBCUT = REGISTRY.register("limbcut", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "limbcut")));
+	public static final RegistryObject<SoundEvent> SWORDBLOCK = REGISTRY.register("swordblock", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "swordblock")));
+	public static final RegistryObject<SoundEvent> WOODENBLOCK = REGISTRY.register("woodenblock", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "woodenblock")));
+	public static final RegistryObject<SoundEvent> LEVEL = REGISTRY.register("level", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "level")));
+	public static final RegistryObject<SoundEvent> WATERBREATHING = REGISTRY.register("waterbreathing", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("craftnoyaiba", "waterbreathing")));
 }

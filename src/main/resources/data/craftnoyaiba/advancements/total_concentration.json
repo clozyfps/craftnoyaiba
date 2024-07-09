@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "total_concentration": {
+    "total_concentration_0": {
       "trigger": "minecraft:impossible"
     }
   }

@@ -1,0 +1,7 @@
+{
+  "parent": "craftnoyaiba:custom/zenitsu_sword",
+  "textures": {
+    "2": "craftnoyaiba:block/zenitsu_sword",
+    "particle": "craftnoyaiba:item/a2i2e_layer_2"
+  }
+}

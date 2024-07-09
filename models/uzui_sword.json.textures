@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "uzui_sword"
+      },
+      "name": "default"
+    }
+  }
+}

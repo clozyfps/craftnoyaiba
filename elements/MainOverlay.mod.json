@@ -1,26 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
     "components": [
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_breath_value",
-          "text": {
-            "fixedValue": "",
-            "name": "BreathValue"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "anchorPoint": "BOTTOM_CENTER",
-          "x": 213,
-          "y": 179
-        }
-      },
       {
         "type": "label",
         "data": {
@@ -37,16 +20,123 @@
           "x": 28,
           "y": 197
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_00.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar0"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar1"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar2"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar3"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar4"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar5"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar7"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slayer_ui_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreatheBar6"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 35
+        }
       }
     ],
     "baseTexture": "",
     "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MainOverlayDisplayOverlayIngame2"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

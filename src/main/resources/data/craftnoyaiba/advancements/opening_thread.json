@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:string"
+    },
+    "title": {
+      "translate": "advancements.opening_thread.title"
+    },
+    "description": {
+      "translate": "advancements.opening_thread.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "opening_thread_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:demon_slayer"
+}

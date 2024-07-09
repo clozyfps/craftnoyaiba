@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"headdetach": {
+			"animation_length": 0.0833,
+			"bones": {
+				"head": {
+					"rotation": {
+						"vector": [0, 0, 37.5]
+					},
+					"position": {
+						"vector": [0, 16, 0]
+					}
+				}
+			}
+		}
+	}
+}

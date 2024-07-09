@@ -18,6 +18,6 @@ public class FinalSelectionDemonRenderer extends HumanoidMobRenderer<FinalSelect
 
 	@Override
 	public ResourceLocation getTextureLocation(FinalSelectionDemonEntity entity) {
-		return new ResourceLocation("craftnoyaiba:textures/entities/demon1.png");
+		return new ResourceLocation("craftnoyaiba:textures/entities/firstdemon.png");
 	}
 }

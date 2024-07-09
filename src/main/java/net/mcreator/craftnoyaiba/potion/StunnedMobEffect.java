@@ -18,11 +18,6 @@ public class StunnedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.craftnoyaiba.stunned";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		StunnedOnEffectActiveTickProcedure.execute(entity);
 	}

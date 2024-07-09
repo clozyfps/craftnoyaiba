@@ -21,8 +21,8 @@ public class CraftnoyaibaModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(CraftnoyaibaModMenus.MENU.get(), MenuScreen::new);
 			MenuScreens.register(CraftnoyaibaModMenus.CREATE_ABILITY.get(), CreateAbilityScreen::new);
+			MenuScreens.register(CraftnoyaibaModMenus.MENU.get(), MenuScreen::new);
 			MenuScreens.register(CraftnoyaibaModMenus.ABILITY_SELECTION.get(), AbilitySelectionScreen::new);
 			MenuScreens.register(CraftnoyaibaModMenus.TAKE_BLOOD.get(), TakeBloodScreen::new);
 		});

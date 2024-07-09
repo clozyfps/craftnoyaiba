@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "craft_no_yaiba": {
+    "craft_no_yaiba_0": {
       "trigger": "minecraft:impossible"
     }
   }

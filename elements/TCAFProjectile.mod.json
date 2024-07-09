@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "projectile",
   "definition": {
     "projectileItem": {
@@ -15,9 +15,6 @@
     "knockback": 0,
     "entityModel": "Default",
     "customModelTexture": "",
-    "onHitsEntity": {
-      "name": "TCAFProjectileProjectileHitsLivingEntity"
-    },
     "onFlyingTick": {
       "name": "TCAFProjectileWhileProjectileFlyingTick"
     }

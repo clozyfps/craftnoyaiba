@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lighting_staff"
+      },
+      "name": "default"
+    }
+  }
+}

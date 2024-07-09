@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "potioneffect",
   "definition": {
     "effectName": "TcafActive",
@@ -12,6 +12,15 @@
     "isBad": false,
     "isBenefitical": false,
     "renderStatusInInventory": false,
-    "renderStatusInHUD": false
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "TCAFActiveEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "TCAFActiveOnEffectActiveTick2"
+    },
+    "onExpired": {
+      "name": "TCAFActiveEffectExpires2"
+    }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shaper_armor_trim_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.thunder_clap_and_flash_six_fold.title"
+    },
+    "description": {
+      "translate": "advancements.thunder_clap_and_flash_six_fold.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thunder_clap_and_flash_six_fold_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:thunder_clap_and_flash"
+}

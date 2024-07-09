@@ -54,8 +54,8 @@ public class BladeItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("Right Click To Take Blood From Yourself"));
 		list.add(Component.literal("[\u00A7l\u00A74Requires Demon Race]"));
 		list.add(Component.literal("[\u00A74\u00A7lRequires Demon Power 2 Or More]"));

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "craftnoyaiba:infinity_castle_multi_bridge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 2,
+    "separation": 1,
+    "salt": 1803583368
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"flamefirstform": {
+			"animation_length": 0.2917,
+			"bones": {
+				"firstformslice": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -102.5, 0]
+						},
+						"0.125": {
+							"vector": [0, 2.5, 0],
+							"easing": "easeOutCirc"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

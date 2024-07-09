@@ -18,11 +18,6 @@ public class AirComboMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.craftnoyaiba.air_combo";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		AirComboOnEffectActiveTickProcedure.execute(entity);
 	}

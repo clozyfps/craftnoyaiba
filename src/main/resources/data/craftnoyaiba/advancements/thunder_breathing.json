@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thunder_breathing": {
+    "thunder_breathing_0": {
       "trigger": "minecraft:impossible"
     }
   },

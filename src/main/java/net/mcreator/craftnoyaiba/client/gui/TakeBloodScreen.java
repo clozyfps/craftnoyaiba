@@ -76,11 +76,6 @@ public class TakeBloodScreen extends AbstractContainerScreen<TakeBloodMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		BloodAmount = new EditBox(this.font, this.leftPos + -63, this.topPos + 71, 118, 18, Component.translatable("gui.craftnoyaiba.take_blood.BloodAmount")) {

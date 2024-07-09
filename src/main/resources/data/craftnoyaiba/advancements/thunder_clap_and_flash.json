@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:raiser_armor_trim_smithing_template"
+      "item": "minecraft:shaper_armor_trim_smithing_template"
     },
     "title": {
       "translate": "advancements.thunder_clap_and_flash.title"
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "thunder_clap_and_flash": {
+    "thunder_clap_and_flash_0": {
       "trigger": "minecraft:impossible"
     }
   },

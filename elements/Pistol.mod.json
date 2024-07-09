@@ -1,0 +1,38 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "a2i2e_layer_2",
+    "customModelName": "pistol_hairo:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Pistol",
+    "specialInformation": {
+      "fixedValue": [
+        "§lSpecial Nichirin Pistol"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:YaibaWeapons"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 2,
+    "damageVsEntity": 9.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "PistolRightclicked"
+    }
+  }
+}

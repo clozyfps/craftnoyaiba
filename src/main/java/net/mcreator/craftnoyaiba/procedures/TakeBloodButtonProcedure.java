@@ -56,7 +56,7 @@ public class TakeBloodButtonProcedure {
 				}
 			}.convert(guistate.containsKey("text:BloodAmount") ? ((EditBox) guistate.get("text:BloodAmount")).getValue() : ""));
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = demonpower;
+				ItemStack _setstack = demonpower.copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)

@@ -46,5 +46,61 @@
         "stream": false
       }
     ]
+  },
+  "infinitycastlesummon": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:infinity_castle_theme_akaza_summoned_-_demon_slayer_season_2_episode_11_ost_epic_cover",
+        "stream": false
+      }
+    ]
+  },
+  "uppermoonmeeting": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:demon_slayer_swordsmith_village_arc_ost_-_infinity_castle_opening_theme_officialmp3",
+        "stream": false
+      }
+    ]
+  },
+  "limbcut": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:bloody",
+        "stream": false
+      }
+    ]
+  },
+  "swordblock": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:clash",
+        "stream": false
+      }
+    ]
+  },
+  "woodenblock": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:woodenclash",
+        "stream": false
+      }
+    ]
+  },
+  "level": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:demonslayercard",
+        "stream": false
+      }
+    ]
+  },
+  "waterbreathing": {
+    "sounds": [
+      {
+        "name": "craftnoyaiba:waterbreathing",
+        "stream": false
+      }
+    ]
   }
 }

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "muzan_favorite": {
+    "muzan_favorite_0": {
       "trigger": "minecraft:impossible"
     }
   },

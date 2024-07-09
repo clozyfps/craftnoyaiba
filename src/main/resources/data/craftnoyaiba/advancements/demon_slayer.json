@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "craftnoyaiba:demon_slayer_uniform_chestplate"
+    },
+    "title": {
+      "translate": "advancements.demon_slayer.title"
+    },
+    "description": {
+      "translate": "advancements.demon_slayer.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demon_slayer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "craftnoyaiba:craft_no_yaiba"
+}

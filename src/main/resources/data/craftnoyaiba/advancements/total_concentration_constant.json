@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "total_concentration_constant": {
+    "total_concentration_constant_0": {
       "trigger": "minecraft:impossible"
     }
   },

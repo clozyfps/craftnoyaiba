@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "craftnoyaiba:blood"
+    },
+    "title": {
+      "translate": "advancements.head_regeneration.title"
+    },
+    "description": {
+      "translate": "advancements.head_regeneration.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "head_regeneration_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 4
+  },
+  "parent": "craftnoyaiba:demon"
+}
