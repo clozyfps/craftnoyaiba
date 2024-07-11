@@ -19,14 +19,14 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.craftnoyaiba.client.model.Modelslayer_uniform;
+import net.mcreator.craftnoyaiba.client.model.Modelkokushibo_robes;
 
 import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
-public abstract class DemonSlayerUniformItem extends ArmorItem {
-	public DemonSlayerUniformItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class UpperMoonOneArmorItem extends ArmorItem {
+	public UpperMoonOneArmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -55,7 +55,7 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "demon_slayer_uniform";
+				return "upper_moon_one_armor";
 			}
 
 			@Override
@@ -70,7 +70,7 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Chestplate extends DemonSlayerUniformItem {
+	public static class Chestplate extends UpperMoonOneArmorItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
 		}
@@ -81,9 +81,9 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelslayer_uniform(Minecraft.getInstance().getEntityModels().bakeLayer(Modelslayer_uniform.LAYER_LOCATION)).Body, "left_arm",
-							new Modelslayer_uniform(Minecraft.getInstance().getEntityModels().bakeLayer(Modelslayer_uniform.LAYER_LOCATION)).LeftArm, "right_arm",
-							new Modelslayer_uniform(Minecraft.getInstance().getEntityModels().bakeLayer(Modelslayer_uniform.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelkokushibo_robes(Minecraft.getInstance().getEntityModels().bakeLayer(Modelkokushibo_robes.LAYER_LOCATION)).Body,
+							"left_arm", new Modelkokushibo_robes(Minecraft.getInstance().getEntityModels().bakeLayer(Modelkokushibo_robes.LAYER_LOCATION)).LeftArm, "right_arm",
+							new Modelkokushibo_robes(Minecraft.getInstance().getEntityModels().bakeLayer(Modelkokushibo_robes.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -95,11 +95,11 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "craftnoyaiba:textures/entities/dsuniform.png";
+			return "craftnoyaiba:textures/entities/kokushibo_v3.png";
 		}
 	}
 
-	public static class Leggings extends DemonSlayerUniformItem {
+	public static class Leggings extends UpperMoonOneArmorItem {
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
 		}
@@ -111,8 +111,8 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modelslayer_uniform(Minecraft.getInstance().getEntityModels().bakeLayer(Modelslayer_uniform.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new Modelslayer_uniform(Minecraft.getInstance().getEntityModels().bakeLayer(Modelslayer_uniform.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new Modelkokushibo_robes(Minecraft.getInstance().getEntityModels().bakeLayer(Modelkokushibo_robes.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new Modelkokushibo_robes(Minecraft.getInstance().getEntityModels().bakeLayer(Modelkokushibo_robes.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -125,7 +125,7 @@ public abstract class DemonSlayerUniformItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "craftnoyaiba:textures/entities/dsuniform.png";
+			return "craftnoyaiba:textures/entities/kokushibo_v3.png";
 		}
 	}
 }

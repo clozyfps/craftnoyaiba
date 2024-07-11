@@ -59,6 +59,8 @@ public class CraftnoyaibaModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_CHESTPLATE.get());
 			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_LEGGINGS.get());
+			tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_CHESTPLATE.get());
+			tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_LEGGINGS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CraftnoyaibaModItems.GOURD.get());
 			tabData.accept(CraftnoyaibaModItems.BLADE.get());

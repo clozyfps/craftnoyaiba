@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.craftnoyaiba.item.UpperMoonOneArmorItem;
 import net.mcreator.craftnoyaiba.item.TrainingSwordItem;
 import net.mcreator.craftnoyaiba.item.ThunderNichirinSwordItem;
 import net.mcreator.craftnoyaiba.item.TestItem;
@@ -59,6 +60,8 @@ public class CraftnoyaibaModItems {
 	public static final RegistryObject<Item> PILLAR_MIDDLE = block(CraftnoyaibaModBlocks.PILLAR_MIDDLE);
 	public static final RegistryObject<Item> TATAMI_1 = block(CraftnoyaibaModBlocks.TATAMI_1);
 	public static final RegistryObject<Item> TATAMI_2 = block(CraftnoyaibaModBlocks.TATAMI_2);
+	public static final RegistryObject<Item> UPPER_MOON_ONE_ARMOR_CHESTPLATE = REGISTRY.register("upper_moon_one_armor_chestplate", () -> new UpperMoonOneArmorItem.Chestplate());
+	public static final RegistryObject<Item> UPPER_MOON_ONE_ARMOR_LEGGINGS = REGISTRY.register("upper_moon_one_armor_leggings", () -> new UpperMoonOneArmorItem.Leggings());
 
 	// Start of user code block custom items
 	// End of user code block custom items
