@@ -4,7 +4,7 @@
   "definition": {
     "name": "Yaiba Nichirins",
     "icon": {
-      "value": "CUSTOM:BasicNichirinSword"
+      "value": "CUSTOM:SoundNichirinSword"
     },
     "showSearch": true
   }

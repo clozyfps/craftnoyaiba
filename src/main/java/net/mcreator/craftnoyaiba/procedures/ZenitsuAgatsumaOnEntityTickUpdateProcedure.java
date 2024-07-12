@@ -1,32 +1,6 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModEntities;
-import net.mcreator.craftnoyaiba.entity.TCAFProjectileEntity;
-import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
-
-import java.util.List;
-import java.util.Comparator;
+import net.minecraftforge.eventbus.api.Event;
 
 public class ZenitsuAgatsumaOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -35,7 +9,6 @@ public class ZenitsuAgatsumaOnEntityTickUpdateProcedure {
 		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 			if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CraftnoyaibaModMobEffects.COOLDOWN.get()))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 80) == 2) {
-					TCAFActiveEffectStartedappliedProcedure.execute(world, entity);
 					CraftnoyaibaMod.queueServerWork(10, () -> {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.TCAF_ACTIVE.get(), 30, 0));

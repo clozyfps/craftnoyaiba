@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftnoyaiba:block/tatami1",
+    "up": "craftnoyaiba:block/tatami1",
+    "north": "craftnoyaiba:block/tatami1",
+    "east": "craftnoyaiba:block/tatami1",
+    "south": "craftnoyaiba:block/tatami1",
+    "west": "craftnoyaiba:block/tatami1",
+    "particle": "craftnoyaiba:block/tatami1"
+  },
+  "render_type": "solid"
+}

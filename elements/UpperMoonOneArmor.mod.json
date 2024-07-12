@@ -1,0 +1,86 @@
+{
+  "_fv": 60,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "dsuniformchestblack",
+    "enableLeggings": true,
+    "textureLeggings": "dsuniformlegsblack",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "templatearmor",
+    "helmetName": "Upper Moon One Armor Helmet",
+    "bodyName": "Upper Moon One Kimono",
+    "leggingsName": "Upper Moon One Hakama",
+    "bootsName": "Upper Moon One Armor Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelkokushibo_robes",
+    "helmetModelPart": "Body",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelkokushibo_robes",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "kokushibo_v3.png",
+    "leggingsModelName": "Modelkokushibo_robes",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "kokushibo_v3.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Body",
+    "bootsModelPartR": "Body",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 2.3,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

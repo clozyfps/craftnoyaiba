@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "craftnoyaiba:blocks/pillar_block_top",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "craftnoyaiba:pillar_block_top"
+        }
+      ]
+    }
+  ]
+}

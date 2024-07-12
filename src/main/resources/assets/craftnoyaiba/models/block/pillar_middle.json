@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftnoyaiba:block/pillar4",
+    "up": "craftnoyaiba:block/pillar4",
+    "north": "craftnoyaiba:block/pillar5",
+    "east": "craftnoyaiba:block/pillar5",
+    "south": "craftnoyaiba:block/pillar5",
+    "west": "craftnoyaiba:block/pillar5",
+    "particle": "craftnoyaiba:block/pillar4"
+  },
+  "render_type": "solid"
+}
