@@ -44,6 +44,7 @@ public class CraftnoyaibaModTabs {
 				tabData.accept(CraftnoyaibaModItems.KAIGAKU_HUMAN_SPAWN_EGG.get());
 				tabData.accept(CraftnoyaibaModItems.KIRIYA_UBUYASHIKI_SPAWN_EGG.get());
 				tabData.accept(CraftnoyaibaModItems.KANATA_UBUYASHIKI_SPAWN_EGG.get());
+				tabData.accept(CraftnoyaibaModItems.ZENITSU_AGATSUMA_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

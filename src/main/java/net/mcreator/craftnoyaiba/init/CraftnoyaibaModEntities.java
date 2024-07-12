@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.craftnoyaiba.entity.ZenitsuAgatsumaEntity;
 import net.mcreator.craftnoyaiba.entity.ThunderClapAndFlashMobEntity;
 import net.mcreator.craftnoyaiba.entity.TCAFThunderGodEntity;
 import net.mcreator.craftnoyaiba.entity.TCAFProjectileEntity;
@@ -83,6 +84,10 @@ public class CraftnoyaibaModEntities {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlamingThunderGodEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TCAFThunderGodEntity>> TCAF_THUNDER_GOD = register("tcaf_thunder_god",
 			EntityType.Builder.<TCAFThunderGodEntity>of(TCAFThunderGodEntity::new, MobCategory.MISC).setCustomClientFactory(TCAFThunderGodEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ZenitsuAgatsumaEntity>> ZENITSU_AGATSUMA = register("zenitsu_agatsuma",
+			EntityType.Builder.<ZenitsuAgatsumaEntity>of(ZenitsuAgatsumaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZenitsuAgatsumaEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -101,6 +106,7 @@ public class CraftnoyaibaModEntities {
 			InfinityCastleDoorUpsideDownEntity.init();
 			FlameFirstFormEntity.init();
 			FlamingThunderGodEntity.init();
+			ZenitsuAgatsumaEntity.init();
 		});
 	}
 
@@ -116,5 +122,6 @@ public class CraftnoyaibaModEntities {
 		event.put(INFINITY_CASTLE_DOOR_UPSIDE_DOWN.get(), InfinityCastleDoorUpsideDownEntity.createAttributes().build());
 		event.put(FLAME_FIRST_FORM.get(), FlameFirstFormEntity.createAttributes().build());
 		event.put(FLAMING_THUNDER_GOD.get(), FlamingThunderGodEntity.createAttributes().build());
+		event.put(ZENITSU_AGATSUMA.get(), ZenitsuAgatsumaEntity.createAttributes().build());
 	}
 }

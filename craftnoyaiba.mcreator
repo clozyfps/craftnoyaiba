@@ -7181,6 +7181,60 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "ZenitsuAgatsumaOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zenitsu_agatsuma_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ZenitsuAgatsumaOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ZenitsuAgatsuma",
+      "type": "animatedentity",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zenitsu_agatsuma",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/item/zenitsu_agatsuma_spawn_egg.json",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/ZenitsuAgatsumaModel.java",
+          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/zenitsu_agatsuma_biome_modifier.json",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/ZenitsuAgatsumaEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/ZenitsuAgatsumaRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [
@@ -8061,6 +8115,7 @@
       "advancements.opening_thread.title": "Opening Thread",
       "item_group.craftnoyaiba.yaiba_armors": "Yaiba Armors",
       "gui.craftnoyaiba.menu.button_ssl": "§l\u003e\u003e",
+      "item.craftnoyaiba.zenitsu_agatsuma_spawn_egg": "Zenitsu Agatsuma Spawn Egg",
       "item.craftnoyaiba.training_sword": "Training Sword",
       "block.craftnoyaiba.demon_spawn_point": "Demon Spawn Point",
       "item.craftnoyaiba.infinity_castle_door_spawn_egg": "Infinity Castle Door Spawn Egg",
@@ -8079,6 +8134,7 @@
       "effect.craftnoyaiba.regen_stun": "Regeneration Stun",
       "subtitles.limbcut": "",
       "gamerule.cnyAutoParry": "cnyautoparry",
+      "entity.craftnoyaiba.zenitsu_agatsuma": "Zenitsu Agatsuma",
       "gui.craftnoyaiba.ability_selection.button_empty": "§l\u003e\u003e",
       "effect.craftnoyaiba.awaken_breath": "AwakenBreath",
       "entity.craftnoyaiba.kaigaku_human": "Kaigaku (Human)",

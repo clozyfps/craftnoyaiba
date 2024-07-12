@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.craftnoyaiba.client.renderer.ZenitsuAgatsumaRenderer;
 import net.mcreator.craftnoyaiba.client.renderer.ThunderClapAndFlashMobRenderer;
 import net.mcreator.craftnoyaiba.client.renderer.KiriyaUbuyashikiRenderer;
 import net.mcreator.craftnoyaiba.client.renderer.KanataUbuyashikiRenderer;
@@ -42,5 +43,6 @@ public class CraftnoyaibaModEntityRenderers {
 		event.registerEntityRenderer(CraftnoyaibaModEntities.GODSPEED_TCAF.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CraftnoyaibaModEntities.FLAMING_THUNDER_GOD.get(), FlamingThunderGodRenderer::new);
 		event.registerEntityRenderer(CraftnoyaibaModEntities.TCAF_THUNDER_GOD.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CraftnoyaibaModEntities.ZENITSU_AGATSUMA.get(), ZenitsuAgatsumaRenderer::new);
 	}
 }

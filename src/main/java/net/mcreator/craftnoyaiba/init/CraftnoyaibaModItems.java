@@ -54,6 +54,7 @@ public class CraftnoyaibaModItems {
 	public static final RegistryObject<Item> SPECIAL_THUNDER_NICHIRIN = REGISTRY.register("special_thunder_nichirin", () -> new SpecialThunderNichirinItem());
 	public static final RegistryObject<Item> FLAMING_THUNDER_GOD_SPAWN_EGG = REGISTRY.register("flaming_thunder_god_spawn_egg", () -> new ForgeSpawnEggItem(CraftnoyaibaModEntities.FLAMING_THUNDER_GOD, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> SOUND_NICHIRIN_SWORD = REGISTRY.register("sound_nichirin_sword", () -> new SoundNichirinSwordItem());
+	public static final RegistryObject<Item> ZENITSU_AGATSUMA_SPAWN_EGG = REGISTRY.register("zenitsu_agatsuma_spawn_egg", () -> new ForgeSpawnEggItem(CraftnoyaibaModEntities.ZENITSU_AGATSUMA, -14541, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
