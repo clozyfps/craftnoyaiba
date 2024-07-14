@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.craftnoyaiba.entity.ZenitsuAgatsumaEntity;
 import net.mcreator.craftnoyaiba.entity.InfinityCastleDoorUpsideDownEntity;
 import net.mcreator.craftnoyaiba.entity.InfinityCastleDoorEntity;
 import net.mcreator.craftnoyaiba.entity.FlamingThunderGodEntity;
@@ -36,6 +37,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof FlamingThunderGodEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ZenitsuAgatsumaEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

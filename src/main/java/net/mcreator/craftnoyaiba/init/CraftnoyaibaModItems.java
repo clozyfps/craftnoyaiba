@@ -62,6 +62,7 @@ public class CraftnoyaibaModItems {
 	public static final RegistryObject<Item> TATAMI_2 = block(CraftnoyaibaModBlocks.TATAMI_2);
 	public static final RegistryObject<Item> UPPER_MOON_ONE_ARMOR_CHESTPLATE = REGISTRY.register("upper_moon_one_armor_chestplate", () -> new UpperMoonOneArmorItem.Chestplate());
 	public static final RegistryObject<Item> UPPER_MOON_ONE_ARMOR_LEGGINGS = REGISTRY.register("upper_moon_one_armor_leggings", () -> new UpperMoonOneArmorItem.Leggings());
+	public static final RegistryObject<Item> ZENITSU_AGATSUMA_SPAWN_EGG = REGISTRY.register("zenitsu_agatsuma_spawn_egg", () -> new ForgeSpawnEggItem(CraftnoyaibaModEntities.ZENITSU_AGATSUMA, -14541, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -7303,6 +7303,18 @@
       "path": "~/Armors"
     },
     {
+      "name": "YaibaDemonArmor",
+      "type": "tab",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_demon_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
       "name": "YaibaSlayerArmor",
       "type": "tab",
       "sortid": 349,
@@ -7315,16 +7327,58 @@
       "path": "~/Creative Tabs"
     },
     {
-      "name": "YaibaDemonArmor",
-      "type": "tab",
-      "sortid": 350,
+      "name": "ZenitsuAgatsumaOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "yaiba_demon_armor",
+      "registry_name": "zenitsu_agatsuma_on_entity_tick_update",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/ZenitsuAgatsumaOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
-      "path": "~/Creative Tabs"
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ZenitsuAgatsuma",
+      "type": "animatedentity",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zenitsu_agatsuma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/entity/ZenitsuAgatsumaEntity.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/ZenitsuAgatsumaRenderer.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/ZenitsuAgatsumaModel.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/zenitsu_agatsuma_spawn_egg.json",
+          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/zenitsu_agatsuma_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [
@@ -8190,7 +8244,6 @@
       "effect.craftnoyaiba.tcafend": "Tcafend",
       "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
       "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
-      "block.craftnoyaiba.pillar_block_bottom": "Pillar Block (Bottom)",
       "subtitles.biwa": "",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
@@ -8204,8 +8257,6 @@
       "item_group.craftnoyaiba.yaiba_nichirins": "Yaiba Nichirins",
       "death.attack.breathing_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.opening_thread.title": "Opening Thread",
-      "item_group.craftnoyaiba.yaiba_demon_armor": "Yaiba Demon Armor",
-      "death.attack.sun_damage.player": "%1$s died whilst trying to escape the sun.",
       "item_group.craftnoyaiba.yaiba_armors": "Yaiba Armors",
       "gui.craftnoyaiba.menu.button_ssl": "§l\u003e\u003e",
       "item.craftnoyaiba.training_sword": "Training Sword",
@@ -8215,7 +8266,6 @@
       "entity.craftnoyaiba.jigoro_kuwajima": "Jigoro Kuwajima",
       "advancements.thunder_clap_and_flash_six_fold.title": "Thunder Clap And Flash Sixfold",
       "subtitles.heartbeat": "",
-      "item.craftnoyaiba.upper_moon_one_armor_chestplate": "Upper Moon One Kimono",
       "item.craftnoyaiba.rifle": "Rifle",
       "effect.craftnoyaiba.stunned": "Stunned",
       "effect.craftnoyaiba.air_combo": "AirComboActive",
@@ -8224,7 +8274,6 @@
       "effect.craftnoyaiba.flaming_thunder_god_active": "Flaming Thunder God Active",
       "death.attack.breathing_damage": "%1$s was killed by a breathing technique",
       "effect.craftnoyaiba.asleep": "Asleep",
-      "death.attack.sun_damage": "%1$s collapsed into ash.",
       "effect.craftnoyaiba.regen_stun": "Regeneration Stun",
       "subtitles.limbcut": "",
       "gamerule.cnyAutoParry": "cnyautoparry",
@@ -8232,11 +8281,8 @@
       "effect.craftnoyaiba.awaken_breath": "AwakenBreath",
       "entity.craftnoyaiba.kaigaku_human": "Kaigaku (Human)",
       "advancements.head_regeneration.descr": "Unlock Head Regeneration As A Demon.",
-      "block.craftnoyaiba.tatami_1": "Tatami (1)",
-      "block.craftnoyaiba.tatami_2": "Tatami (1)",
       "advancements.total_concentration.title": "Total Concentration",
       "advancements.demon.descr": "Become a Demon.",
-      "item_group.craftnoyaiba.yaiba_slayer_armor": "Yaiba Slayer Armor",
       "item.craftnoyaiba.jigoro_kuwajima_spawn_egg": "Jigoro Kuwajima Spawn Egg",
       "item.craftnoyaiba.kanata_ubuyashiki_spawn_egg": "Kanata Ubuyashiki Spawn Egg",
       "item.craftnoyaiba.final_selection_demon_spawn_egg": "Final Selection Demon Spawn Egg",
@@ -8273,7 +8319,6 @@
       "block.craftnoyaiba.wisteria": "Wisteria",
       "entity.craftnoyaiba.infinity_castle_door": "Infinity Castle Door",
       "effect.craftnoyaiba.tesla_active": "Tesla Active",
-      "item.craftnoyaiba.upper_moon_one_armor_leggings": "Upper Moon One Hakama",
       "gui.craftnoyaiba.take_blood.button_take": "Take",
       "gamerule.cnyAutoParry.description": "parry automatically",
       "advancements.recovery_breathing.title": "Recovery Breathing",
@@ -8281,7 +8326,6 @@
       "gamerule.assignedRanks": "assignedranks",
       "subtitles.uppermoonmeeting": "",
       "subtitles.woodenblock": "",
-      "death.attack.sun_damage.item": "%1$s shriveled into ash from the sun.",
       "gui.craftnoyaiba.create_ability.button_ssl3": "§l+",
       "gui.craftnoyaiba.take_blood.BloodAmount": "Amount Of Blood In Demon Power",
       "gui.craftnoyaiba.create_ability.button_ssl2": "§l+",
@@ -8320,9 +8364,7 @@
       "item.craftnoyaiba.sound_nichirin_sword": "Sound Nichirin Sword",
       "effect.craftnoyaiba.head_regeneration_timer": "Head Regeneration Timer",
       "subtitles.clash": "",
-      "block.craftnoyaiba.pillar_middle": "Pillar Block (Middle)",
       "gui.craftnoyaiba.create_ability.button_sslx": "§lX",
-      "block.craftnoyaiba.pillar_block_top": "Pillar Block (Top)",
       "advancements.demon_slayer.descr": "Become a Demon Slayer",
       "item.craftnoyaiba.infinity_castle_door_upside_down_spawn_egg": "Infinity Castle Door Upside Down Spawn Egg",
       "effect.craftnoyaiba.pre_six_fold": "Pre Six Fold",
@@ -8333,6 +8375,15 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Gamerules",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
       {
         "name": "Procedures",
         "children": [
@@ -8356,38 +8407,16 @@
         ]
       },
       {
-        "name": "Mobs",
+        "name": "Advancements",
         "children": [
           {
-            "name": "Procedures",
+            "name": "Thunder",
             "children": []
-          },
-          {
-            "name": "Misc",
-            "children": [
-              {
-                "name": "Procedures",
-                "children": []
-              },
-              {
-                "name": "Breathing",
-                "children": [
-                  {
-                    "name": "Flame",
-                    "children": []
-                  },
-                  {
-                    "name": "Thunder",
-                    "children": []
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
       {
-        "name": "Keybinds",
+        "name": "Blocks",
         "children": [
           {
             "name": "Procedures",
@@ -8396,71 +8425,8 @@
         ]
       },
       {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Weapons",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Gamerules",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Commands",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": [
-              {
-                "name": "Breathing",
-                "children": []
-              },
-              {
-                "name": "Traits",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Armors",
+        "name": "Tags",
         "children": []
-      },
-      {
-        "name": "GUI",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Overlays",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
       },
       {
         "name": "Potion",
@@ -8481,12 +8447,26 @@
         ]
       },
       {
-        "name": "Particles",
+        "name": "GUI",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Damage Sources",
         "children": []
       },
       {
-        "name": "Biomes",
-        "children": []
+        "name": "Weapons",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Dimensions",
@@ -8498,28 +8478,25 @@
         ]
       },
       {
-        "name": "Creative Tabs",
-        "children": []
-      },
-      {
-        "name": "Tags",
-        "children": []
-      },
-      {
-        "name": "Damage Sources",
-        "children": []
-      },
-      {
-        "name": "Advancements",
+        "name": "Items",
         "children": [
           {
-            "name": "Thunder",
+            "name": "Procedures",
             "children": []
           }
         ]
       },
       {
-        "name": "Structures",
+        "name": "Overlays",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Biomes",
         "children": []
       },
       {
@@ -8532,11 +8509,76 @@
         ]
       },
       {
-        "name": "Blocks",
+        "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Armors",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": [
           {
             "name": "Procedures",
             "children": []
+          },
+          {
+            "name": "Misc",
+            "children": [
+              {
+                "name": "Breathing",
+                "children": [
+                  {
+                    "name": "Flame",
+                    "children": []
+                  },
+                  {
+                    "name": "Thunder",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Keybinds",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": [
+              {
+                "name": "Traits",
+                "children": []
+              },
+              {
+                "name": "Breathing",
+                "children": []
+              }
+            ]
           }
         ]
       }
