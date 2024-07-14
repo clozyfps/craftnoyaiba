@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Yaiba Demon Armor",
+    "icon": {
+      "value": "CUSTOM:UpperMoonOneArmor.body"
+    },
+    "showSearch": false
+  }
+}

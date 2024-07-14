@@ -5,13 +5,13 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "dsuniformchestblack",
+    "textureBody": "slayer_topicon",
     "enableLeggings": true,
-    "textureLeggings": "dsuniformlegsblack",
+    "textureLeggings": "slayerbottom_icon",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:YaibaSlayerArmor"
     },
     "armorTextureFile": "templatearmor",
     "helmetName": "Demon Slayer Uniform Helmet",
