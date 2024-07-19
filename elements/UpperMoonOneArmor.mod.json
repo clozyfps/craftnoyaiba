@@ -5,13 +5,13 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "dsuniformchestblack",
+    "textureBody": "uppermoonone_armoricon",
     "enableLeggings": true,
-    "textureLeggings": "dsuniformlegsblack",
+    "textureLeggings": "uppermoonone_armoricon2",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:YaibaDemonArmor"
     },
     "armorTextureFile": "templatearmor",
     "helmetName": "Upper Moon One Armor Helmet",
@@ -43,8 +43,8 @@
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "kokushibo_v3.png",
     "bootsModelName": "Default",
-    "bootsModelPartL": "Body",
-    "bootsModelPartR": "Body",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",

@@ -6341,10 +6341,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -7220,7 +7216,7 @@
           }
         ]
       },
-      "path": "~/Mobs/Procedures"
+      "path": "~/Mobs"
     },
     {
       "name": "ZenitsuAgatsuma",
@@ -7381,18 +7377,18 @@
       "path": "~/Procedures"
     },
     {
-      "name": "TestSLICE",
-      "type": "function",
-      "sortid": 350,
+      "name": "NewGodspeed",
+      "type": "potioneffect",
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test_slice",
+      "registry_name": "new_godspeed",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/functions/test_slice.mcfunction"
+          "src/main/java/net/mcreator/craftnoyaiba/potion/NewGodspeedMobEffect.java"
         ]
       },
-      "path": "~/Functions"
+      "path": "~/Potion"
     },
     {
       "name": "FlamingThunderGodActiveEffectStartedapplied",
@@ -7443,30 +7439,6 @@
       "path": "~/Potion/Procedures"
     },
     {
-      "name": "NewGodspeedEffectStartedapplied",
-      "type": "procedure",
-      "sortid": 353,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "new_godspeed_effect_startedapplied",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/procedures/NewGodspeedEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Potion/Procedures"
-    },
-    {
       "name": "NewGodspeedEffectExpires",
       "type": "procedure",
       "sortid": 354,
@@ -7491,18 +7463,66 @@
       "path": "~/Potion/Procedures"
     },
     {
-      "name": "NewGodspeed",
-      "type": "potioneffect",
-      "sortid": 355,
+      "name": "TestSLICE",
+      "type": "function",
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "new_godspeed",
+      "registry_name": "test_slice",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/potion/NewGodspeedMobEffect.java"
+          "src/main/resources/data/craftnoyaiba/functions/test_slice.mcfunction"
         ]
       },
-      "path": "~/Potion"
+      "path": "~/Functions"
+    },
+    {
+      "name": "NewGodspeedEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_godspeed_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/procedures/NewGodspeedEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion/Procedures"
+    },
+    {
+      "name": "YaibaDemonArmor",
+      "type": "tab",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_demon_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "YaibaSlayerArmor",
+      "type": "tab",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_slayer_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
     }
   ],
   "variable_elements": [
@@ -8355,9 +8375,6 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.AIR"
-    ],
-    "ENTITIES:mod:swordmobs": [
-      "CUSTOM:ZenitsuAgatsuma"
     ]
   },
   "language_map": {
@@ -8373,7 +8390,6 @@
       "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
       "block.craftnoyaiba.pillar_block_bottom": "Pillar Block (Bottom)",
       "subtitles.biwa": "",
-      "effect.craftnoyaiba.new_godspeed": "New Godspeed",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
       "gui.craftnoyaiba.create_ability.button_sslx1": "§lX",
@@ -8657,6 +8673,10 @@
         "children": []
       },
       {
+        "name": "Functions",
+        "children": []
+      },
+      {
         "name": "Structures",
         "children": []
       },
@@ -8721,10 +8741,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Functions",
-        "children": []
       }
     ]
   },

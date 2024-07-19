@@ -1,10 +1,6 @@
 package net.mcreator.craftnoyaiba.entity.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.craftnoyaiba.entity.ZenitsuAgatsumaEntity;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class ZenitsuAgatsumaModel extends GeoModel<ZenitsuAgatsumaEntity> {
 	@Override

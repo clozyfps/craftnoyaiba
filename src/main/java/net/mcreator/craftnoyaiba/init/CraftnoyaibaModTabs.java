@@ -28,6 +28,13 @@ public class CraftnoyaibaModTabs {
 				tabData.accept(CraftnoyaibaModItems.KHAKKHARA.get());
 				tabData.accept(CraftnoyaibaModItems.TRAINING_SWORD.get());
 			}).withSearchBar().build());
+	public static final RegistryObject<CreativeModeTab> YAIBA_DEMON_ARMOR = REGISTRY.register("yaiba_demon_armor",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_demon_armor")).icon(() -> new ItemStack(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_CHESTPLATE.get());
+				tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_LEGGINGS.get());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> YAIBA_BLOCKS = REGISTRY.register("yaiba_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_blocks")).icon(() -> new ItemStack(CraftnoyaibaModBlocks.PILLAR_BLOCK_TOP.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CraftnoyaibaModBlocks.PILLAR_BLOCK_TOP.get().asItem());
@@ -36,6 +43,13 @@ public class CraftnoyaibaModTabs {
 				tabData.accept(CraftnoyaibaModBlocks.TATAMI_1.get().asItem());
 				tabData.accept(CraftnoyaibaModBlocks.TATAMI_2.get().asItem());
 			}).withSearchBar().build());
+	public static final RegistryObject<CreativeModeTab> YAIBA_SLAYER_ARMOR = REGISTRY.register("yaiba_slayer_armor",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_slayer_armor")).icon(() -> new ItemStack(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_CHESTPLATE.get());
+				tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_LEGGINGS.get());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> YAIBA_NICHIRINS = REGISTRY.register("yaiba_nichirins",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.craftnoyaiba.yaiba_nichirins")).icon(() -> new ItemStack(CraftnoyaibaModItems.SOUND_NICHIRIN_SWORD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CraftnoyaibaModItems.BASIC_NICHIRIN_SWORD.get());
@@ -57,12 +71,7 @@ public class CraftnoyaibaModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_CHESTPLATE.get());
-			tabData.accept(CraftnoyaibaModItems.DEMON_SLAYER_UNIFORM_LEGGINGS.get());
-			tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_CHESTPLATE.get());
-			tabData.accept(CraftnoyaibaModItems.UPPER_MOON_ONE_ARMOR_LEGGINGS.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CraftnoyaibaModItems.GOURD.get());
 			tabData.accept(CraftnoyaibaModItems.BLADE.get());
 		}
