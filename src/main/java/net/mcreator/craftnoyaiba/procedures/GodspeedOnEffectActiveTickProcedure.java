@@ -21,11 +21,18 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
 
 import java.util.List;
 import java.util.Comparator;
+
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
+import dev.kosmx.playerAnim.api.layered.ModifierLayer;
+import dev.kosmx.playerAnim.api.layered.KeyframeAnimationPlayer;
+import dev.kosmx.playerAnim.api.layered.IAnimation;
 
 public class GodspeedOnEffectActiveTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -77,5 +84,13 @@ public class GodspeedOnEffectActiveTickProcedure {
 			}
 		}
 		entity.setDeltaMovement(new Vec3((1.3 * entity.getLookAngle().x), (0.2 * entity.getLookAngle().y), (1.3 * entity.getLookAngle().z)));
+		if (world.isClientSide()) {
+			if (entity instanceof AbstractClientPlayer player) {
+				var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
+				if (animation != null && !animation.isActive()) {
+					animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "flamingthundergodactive"))));
+				}
+			}
+		}
 	}
 }

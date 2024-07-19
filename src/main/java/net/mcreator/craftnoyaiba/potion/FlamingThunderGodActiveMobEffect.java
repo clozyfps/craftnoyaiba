@@ -12,11 +12,17 @@ import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.craftnoyaiba.procedures.FlamingThunderGodActiveOnEffectActiveTickProcedure;
+import net.mcreator.craftnoyaiba.procedures.FlamingThunderGodActiveEffectStartedappliedProcedure;
 import net.mcreator.craftnoyaiba.procedures.FlamingThunderGodActiveEffectExpiresProcedure;
 
 public class FlamingThunderGodActiveMobEffect extends MobEffect {
 	public FlamingThunderGodActiveMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
+	}
+
+	@Override
+	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		FlamingThunderGodActiveEffectStartedappliedProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
@@ -27,7 +33,7 @@ public class FlamingThunderGodActiveMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		FlamingThunderGodActiveEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
+		FlamingThunderGodActiveEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

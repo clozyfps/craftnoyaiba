@@ -83,7 +83,7 @@ public class FlamingThunderGodEntity extends TamableAnimal implements GeoEntity 
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "flamingthundergodtexture");
+		this.entityData.define(TEXTURE, "flamingthundergod");
 	}
 
 	public void setTexture(String texture) {

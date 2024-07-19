@@ -4,10 +4,10 @@
   "definition": {
     "mobName": "Flaming Thunder God",
     "mobLabel": "",
-    "mobModelTexture": "flamingthundergodtexture.png",
+    "mobModelTexture": "flamingthundergod.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 0.5
+      "fixedValue": 1.2
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
@@ -107,7 +107,7 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "model": "flamingthundergod.geo.json",
+    "model": "dragonhead.geo.json",
     "groupName": "",
     "animation1": "idle",
     "animation2": "",

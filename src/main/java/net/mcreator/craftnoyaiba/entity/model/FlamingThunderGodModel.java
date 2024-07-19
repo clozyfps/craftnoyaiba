@@ -9,12 +9,12 @@ import net.mcreator.craftnoyaiba.entity.FlamingThunderGodEntity;
 public class FlamingThunderGodModel extends GeoModel<FlamingThunderGodEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(FlamingThunderGodEntity entity) {
-		return new ResourceLocation("craftnoyaiba", "animations/flamingthundergod.animation.json");
+		return new ResourceLocation("craftnoyaiba", "animations/dragonhead.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FlamingThunderGodEntity entity) {
-		return new ResourceLocation("craftnoyaiba", "geo/flamingthundergod.geo.json");
+		return new ResourceLocation("craftnoyaiba", "geo/dragonhead.geo.json");
 	}
 
 	@Override

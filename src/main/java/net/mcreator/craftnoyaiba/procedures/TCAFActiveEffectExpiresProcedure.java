@@ -1,6 +1,18 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.player.AbstractClientPlayer;
+
+import net.mcreator.craftnoyaiba.entity.ZenitsuAgatsumaEntity;
+
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
+import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
+import dev.kosmx.playerAnim.api.layered.ModifierLayer;
+import dev.kosmx.playerAnim.api.layered.KeyframeAnimationPlayer;
+import dev.kosmx.playerAnim.api.layered.IAnimation;
 
 public class TCAFActiveEffectExpiresProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
