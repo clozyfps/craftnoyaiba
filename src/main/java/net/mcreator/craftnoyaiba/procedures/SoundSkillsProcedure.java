@@ -1,6 +1,7 @@
 package net.mcreator.craftnoyaiba.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -15,8 +16,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.Connection;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.player.AbstractClientPlayer;
 
@@ -25,6 +28,9 @@ import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
 import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
+import java.util.Iterator;
 
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
@@ -81,6 +87,19 @@ public class SoundSkillsProcedure {
 									var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
 									if (animation != null && !animation.isActive()) {
 										animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "roar"))));
+									}
+								}
+							}
+							if (!world.isClientSide()) {
+								if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+									List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+									synchronized (connections) {
+										Iterator<Connection> iterator = connections.iterator();
+										while (iterator.hasNext()) {
+											Connection connection = iterator.next();
+											if (!connection.isConnecting() && connection.isConnected())
+												CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("roar"), entity.getId(), false), connection, NetworkDirection.PLAY_TO_CLIENT);
+										}
 									}
 								}
 							}
@@ -148,6 +167,20 @@ public class SoundSkillsProcedure {
 									}
 								}
 							}
+							if (!world.isClientSide()) {
+								if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+									List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+									synchronized (connections) {
+										Iterator<Connection> iterator = connections.iterator();
+										while (iterator.hasNext()) {
+											Connection connection = iterator.next();
+											if (!connection.isConnecting() && connection.isConnected())
+												CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("constantresoundingslashes"), entity.getId(), false), connection,
+														NetworkDirection.PLAY_TO_CLIENT);
+										}
+									}
+								}
+							}
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal(("\u00A7l\u00A76" + "Sound Breathing, Second Form: Constant Resounding Slash")), true);
 							{
@@ -199,6 +232,20 @@ public class SoundSkillsProcedure {
 									var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
 									if (animation != null && !animation.isActive()) {
 										animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "stringperformance"))));
+									}
+								}
+							}
+							if (!world.isClientSide()) {
+								if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+									List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+									synchronized (connections) {
+										Iterator<Connection> iterator = connections.iterator();
+										while (iterator.hasNext()) {
+											Connection connection = iterator.next();
+											if (!connection.isConnecting() && connection.isConnected())
+												CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("stringperformance"), entity.getId(), false), connection,
+														NetworkDirection.PLAY_TO_CLIENT);
+										}
 									}
 								}
 							}

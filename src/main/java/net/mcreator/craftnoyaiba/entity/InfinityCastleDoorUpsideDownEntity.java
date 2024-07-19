@@ -131,7 +131,7 @@ public class InfinityCastleDoorUpsideDownEntity extends Monster implements GeoEn
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		InfinityCastleDoorUpsideDownPlayerCollidesWithThisEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, sourceentity);
+		InfinityCastleDoorUpsideDownPlayerCollidesWithThisEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {

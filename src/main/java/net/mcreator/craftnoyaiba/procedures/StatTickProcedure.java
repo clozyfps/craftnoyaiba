@@ -178,12 +178,6 @@ public class StatTickProcedure {
 			if (entity.getPersistentData().getDouble("swingtimer") > 0) {
 				entity.getPersistentData().putDouble("swingtimer", (entity.getPersistentData().getDouble("swingtimer") - 1));
 			}
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
-					.setBaseValue((20 + (entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).DefenseStat * 1.4));
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-					.setBaseValue((1 + (entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).StrengthStat * 0.05));
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-					.setBaseValue((0.1 + (entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).AgilityStat * 0.008));
 			if (((entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).Race).equals("Demon")) {
 				{
 					double _setval = (entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).DemonPower * 2;
@@ -237,7 +231,7 @@ public class StatTickProcedure {
 					}
 				}
 				if (entity.isAlive()) {
-					if (!(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(CraftnoyaibaModMobEffects.REGEN_STUN.get()))) {
+					if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(CraftnoyaibaModMobEffects.REGEN_STUN.get()))) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 0.05
 									+ (entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).DemonPower / 50));
