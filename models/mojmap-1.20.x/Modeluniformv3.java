@@ -27,8 +27,7 @@ public class Modeluniformv3<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition Body = partdefinition.addOrReplaceChild("Body", CubeListBuilder.create().texOffs(28, 6)
 				.addBox(-4.0F, 10.0F, -2.0F, 8.0F, 2.0F, 4.0F, new CubeDeformation(0.2F)).texOffs(0, 0)
-				.addBox(-4.0F, 2.75F, -2.0F, 8.0F, 7.0F, 4.0F, new CubeDeformation(0.25F)).texOffs(40, 0)
-				.addBox(-2.0F, 0.75F, -2.175F, 4.0F, 9.0F, 1.0F, new CubeDeformation(0.25F)).texOffs(0, 27)
+				.addBox(-4.0F, 2.75F, -2.0F, 8.0F, 7.0F, 4.0F, new CubeDeformation(0.25F)).texOffs(0, 27)
 				.addBox(-2.0F, 0.75F, 1.175F, 4.0F, 9.0F, 1.0F, new CubeDeformation(0.25F)).texOffs(24, 0)
 				.addBox(-4.0F, 0.25F, -2.0F, 8.0F, 2.0F, 4.0F, new CubeDeformation(0.26F)).texOffs(24, 6)
 				.addBox(-0.9167F, 2.3333F, -2.9139F, 2.0F, 2.0F, 2.0F, new CubeDeformation(-0.5F)).texOffs(20, 0)
