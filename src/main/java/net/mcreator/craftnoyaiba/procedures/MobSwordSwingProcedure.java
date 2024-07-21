@@ -1,6 +1,13 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.craftnoyaiba.entity.ZenitsuAgatsumaEntity;
 
 public class MobSwordSwingProcedure {
 	public static void execute(Entity sourceentity) {

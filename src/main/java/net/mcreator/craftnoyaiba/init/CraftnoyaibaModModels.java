@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.craftnoyaiba.client.model.Modeluzui_armor;
+import net.mcreator.craftnoyaiba.client.model.Modeluniformv3;
 import net.mcreator.craftnoyaiba.client.model.Modeluniform;
 import net.mcreator.craftnoyaiba.client.model.Modelstone;
 import net.mcreator.craftnoyaiba.client.model.Modelslayer_uniform;
@@ -30,6 +31,7 @@ public class CraftnoyaibaModModels {
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modeluzui_armor.LAYER_LOCATION, Modeluzui_armor::createBodyLayer);
 		event.registerLayerDefinition(Modeljigoro.LAYER_LOCATION, Modeljigoro::createBodyLayer);
+		event.registerLayerDefinition(Modeluniformv3.LAYER_LOCATION, Modeluniformv3::createBodyLayer);
 		event.registerLayerDefinition(Modelkokushibo_robes.LAYER_LOCATION, Modelkokushibo_robes::createBodyLayer);
 		event.registerLayerDefinition(Modelstone.LAYER_LOCATION, Modelstone::createBodyLayer);
 	}

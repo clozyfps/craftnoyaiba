@@ -1,5 +1,6 @@
 package net.mcreator.craftnoyaiba.procedures;
 
+import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -18,14 +19,19 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.Connection;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
 import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
+import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
+import java.util.Iterator;
 
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationRegistry;
 import dev.kosmx.playerAnim.minecraftApi.PlayerAnimationAccess;
@@ -69,6 +75,19 @@ public class DemonLimbDamageProcedure {
 								}
 							}
 						}
+						if (!world.isClientSide()) {
+							if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+								List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+								synchronized (connections) {
+									Iterator<Connection> iterator = connections.iterator();
+									while (iterator.hasNext()) {
+										Connection connection = iterator.next();
+										if (!connection.isConnecting() && connection.isConnected())
+											CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("rightarmgone"), entity.getId(), true), connection, NetworkDirection.PLAY_TO_CLIENT);
+									}
+								}
+							}
+						}
 						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("Cut Right Arm Off"), false);
 						if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -102,6 +121,19 @@ public class DemonLimbDamageProcedure {
 								var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
 								if (animation != null) {
 									animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "leftarmgone"))));
+								}
+							}
+						}
+						if (!world.isClientSide()) {
+							if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+								List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+								synchronized (connections) {
+									Iterator<Connection> iterator = connections.iterator();
+									while (iterator.hasNext()) {
+										Connection connection = iterator.next();
+										if (!connection.isConnecting() && connection.isConnected())
+											CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("leftarmgone"), entity.getId(), true), connection, NetworkDirection.PLAY_TO_CLIENT);
+									}
 								}
 							}
 						}
@@ -141,6 +173,19 @@ public class DemonLimbDamageProcedure {
 								}
 							}
 						}
+						if (!world.isClientSide()) {
+							if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+								List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+								synchronized (connections) {
+									Iterator<Connection> iterator = connections.iterator();
+									while (iterator.hasNext()) {
+										Connection connection = iterator.next();
+										if (!connection.isConnecting() && connection.isConnected())
+											CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("rightleggone"), entity.getId(), true), connection, NetworkDirection.PLAY_TO_CLIENT);
+									}
+								}
+							}
+						}
 						world.levelEvent(2001, BlockPos.containing(x, y - 0.5, z), Block.getId(Blocks.RED_TERRACOTTA.defaultBlockState()));
 						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("Cut Right Leg Off"), false);
@@ -174,6 +219,19 @@ public class DemonLimbDamageProcedure {
 								var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
 								if (animation != null) {
 									animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "leftleggone"))));
+								}
+							}
+						}
+						if (!world.isClientSide()) {
+							if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+								List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+								synchronized (connections) {
+									Iterator<Connection> iterator = connections.iterator();
+									while (iterator.hasNext()) {
+										Connection connection = iterator.next();
+										if (!connection.isConnecting() && connection.isConnected())
+											CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("leftleggone"), entity.getId(), true), connection, NetworkDirection.PLAY_TO_CLIENT);
+									}
 								}
 							}
 						}
@@ -211,6 +269,19 @@ public class DemonLimbDamageProcedure {
 								var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("craftnoyaiba", "player_animation"));
 								if (animation != null) {
 									animation.setAnimation(new KeyframeAnimationPlayer(PlayerAnimationRegistry.getAnimation(new ResourceLocation("craftnoyaiba", "headgone"))));
+								}
+							}
+						}
+						if (!world.isClientSide()) {
+							if (entity instanceof Player && world instanceof ServerLevel srvLvl_) {
+								List<Connection> connections = srvLvl_.getServer().getConnection().getConnections();
+								synchronized (connections) {
+									Iterator<Connection> iterator = connections.iterator();
+									while (iterator.hasNext()) {
+										Connection connection = iterator.next();
+										if (!connection.isConnecting() && connection.isConnected())
+											CraftnoyaibaMod.PACKET_HANDLER.sendTo(new SetupAnimationsProcedure.CraftnoyaibaModAnimationMessage(Component.literal("headgone"), entity.getId(), true), connection, NetworkDirection.PLAY_TO_CLIENT);
+									}
 								}
 							}
 						}
