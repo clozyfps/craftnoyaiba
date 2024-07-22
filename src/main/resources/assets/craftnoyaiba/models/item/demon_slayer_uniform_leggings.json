@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "craftnoyaiba:item/slayerbottom_icon"
+    "layer0": "craftnoyaiba:item/uniformv3_bottom"
   }
 }

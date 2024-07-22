@@ -1,33 +1,9 @@
 
 package net.mcreator.craftnoyaiba.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.craftnoyaiba.world.inventory.AbilitySelectionMenu;
-import net.mcreator.craftnoyaiba.procedures.Skill8PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill7PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill6PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill5PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill4PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill3PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill2PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.Skill1PressedProcedure;
-import net.mcreator.craftnoyaiba.procedures.OpenAbilityMenuProcedure;
-import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
-
-import java.util.function.Supplier;
-import java.util.HashMap;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbilitySelectionButtonMessage {
+
 	private final int buttonID, x, y, z;
 
 	public AbilitySelectionButtonMessage(FriendlyByteBuf buffer) {
@@ -59,6 +35,7 @@ public class AbilitySelectionButtonMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
+
 			handleButtonAction(entity, buttonID, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -67,9 +44,11 @@ public class AbilitySelectionButtonMessage {
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
 		HashMap guistate = AbilitySelectionMenu.guistate;
+
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+
 		if (buttonID == 0) {
 
 			OpenAbilityMenuProcedure.execute(world, x, y, z, entity);
@@ -112,4 +91,5 @@ public class AbilitySelectionButtonMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		CraftnoyaibaMod.addNetworkMessage(AbilitySelectionButtonMessage.class, AbilitySelectionButtonMessage::buffer, AbilitySelectionButtonMessage::new, AbilitySelectionButtonMessage::handler);
 	}
+
 }

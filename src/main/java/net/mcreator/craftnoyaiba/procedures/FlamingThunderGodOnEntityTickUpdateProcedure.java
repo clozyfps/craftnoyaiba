@@ -1,14 +1,6 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
-
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModParticleTypes;
+import net.minecraftforge.eventbus.api.Event;
 
 public class FlamingThunderGodOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

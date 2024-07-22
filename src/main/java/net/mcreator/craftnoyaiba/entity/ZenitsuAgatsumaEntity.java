@@ -148,7 +148,7 @@ public class ZenitsuAgatsumaEntity extends Monster implements GeoEntity {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MAX_HEALTH, 120);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
@@ -157,9 +157,32 @@ public class ZenitsuAgatsumaEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
+
+			) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("zenitsuwalk"));
+			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("zenitsuidle"));
 		}
 		return PlayState.STOP;
+	}
+
+	private PlayState attackingPredicate(AnimationState event) {
+		double d1 = this.getX() - this.xOld;
+		double d0 = this.getZ() - this.zOld;
+		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+			this.swinging = true;
+			this.lastSwing = level().getGameTime();
+		}
+		if (this.swinging && this.lastSwing + 7L <= level().getGameTime()) {
+			this.swinging = false;
+		}
+		if (this.swinging && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+			event.getController().forceAnimationReset();
+			return event.setAndContinue(RawAnimation.begin().thenPlay("basicattackone"));
+		}
+		return PlayState.CONTINUE;
 	}
 
 	private PlayState procedurePredicate(AnimationState event) {
@@ -195,6 +218,7 @@ public class ZenitsuAgatsumaEntity extends Monster implements GeoEntity {
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
 		data.add(new AnimationController<>(this, "movement", 4, this::movementPredicate));
+		data.add(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.add(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 

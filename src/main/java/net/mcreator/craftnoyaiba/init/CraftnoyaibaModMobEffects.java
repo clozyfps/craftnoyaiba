@@ -19,6 +19,7 @@ import net.mcreator.craftnoyaiba.potion.RegenerationTimerMobEffect;
 import net.mcreator.craftnoyaiba.potion.RegenStunMobEffect;
 import net.mcreator.craftnoyaiba.potion.PreSixFoldMobEffect;
 import net.mcreator.craftnoyaiba.potion.OutwardsPoofMobEffect;
+import net.mcreator.craftnoyaiba.potion.NewGodspeedMobEffect;
 import net.mcreator.craftnoyaiba.potion.ImpactFrameMobEffect;
 import net.mcreator.craftnoyaiba.potion.HeadRegenerationTimerMobEffect;
 import net.mcreator.craftnoyaiba.potion.GroundSlamMobEffect;
@@ -54,4 +55,5 @@ public class CraftnoyaibaModMobEffects {
 	public static final RegistryObject<MobEffect> CONSTANT_RESOUNDING_SLASHES = REGISTRY.register("constant_resounding_slashes", () -> new ConstantResoundingSlashesMobEffect());
 	public static final RegistryObject<MobEffect> STRING_PERFORMANCE_MOVE = REGISTRY.register("string_performance_move", () -> new StringPerformanceMoveMobEffect());
 	public static final RegistryObject<MobEffect> TCAFEND = REGISTRY.register("tcafend", () -> new TcafendMobEffect());
+	public static final RegistryObject<MobEffect> NEW_GODSPEED = REGISTRY.register("new_godspeed", () -> new NewGodspeedMobEffect());
 }

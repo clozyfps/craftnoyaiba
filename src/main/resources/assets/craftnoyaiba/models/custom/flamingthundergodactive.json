@@ -1,0 +1,106 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "flamingthundergodactive": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": {
+            "vector": [
+              25,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -1,
+              -4
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "vector": [
+              102.5,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -1,
+              -4
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "vector": [
+              27.93034,
+              22.10269,
+              80.8053
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              -2,
+              -5
+            ]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "vector": [
+              -5.05973,
+              -3.50164,
+              -3.23215
+            ]
+          },
+          "position": {
+            "vector": [
+              -1,
+              1,
+              -2
+            ]
+          }
+        },
+        "right_leg": {
+          "rotation": {
+            "vector": [
+              7.5,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              4,
+              -4
+            ]
+          }
+        },
+        "left_leg": {
+          "rotation": {
+            "vector": [
+              61.5,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "vector": [
+              0,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    }
+  }
+}
