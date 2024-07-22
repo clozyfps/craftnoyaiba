@@ -1,37 +1,13 @@
 
 package net.mcreator.craftnoyaiba.entity;
 
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.projectile.ThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnGroupData;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.nbt.CompoundTag;
-
-import net.mcreator.craftnoyaiba.procedures.ThunderClapAndFlashMobOnInitialEntitySpawnProcedure;
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModEntities;
-
-import javax.annotation.Nullable;
+import net.minecraft.nbt.Tag;
+import net.minecraft.network.syncher.EntityDataAccessor;
 
 public class ThunderClapAndFlashMobEntity extends Monster {
+
 	public ThunderClapAndFlashMobEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(CraftnoyaibaModEntities.THUNDER_CLAP_AND_FLASH_MOB.get(), world);
 	}
@@ -41,6 +17,7 @@ public class ThunderClapAndFlashMobEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(true);
+
 	}
 
 	@Override
@@ -120,6 +97,7 @@ public class ThunderClapAndFlashMobEntity extends Monster {
 	}
 
 	public static void init() {
+
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -129,6 +107,8 @@ public class ThunderClapAndFlashMobEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+
 		return builder;
 	}
+
 }

@@ -1,24 +1,6 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
-
-import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
-
-import java.util.List;
-import java.util.Comparator;
+import net.minecraftforge.eventbus.api.Event;
 
 public class TestRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -85,9 +67,17 @@ public class TestRightclickedProcedure {
 			}
 		}
 		if (entity.isShiftKeyDown()) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"execute as @p run function test_slice rotated 50");
+			degree = Math.toRadians(entity.getYRot());
+			xRadius = 3;
+			zRadius = 3;
+			for (int index0 = 0; index0 < 36; index0++) {
+				x_pos = x + Math.cos(degree) * xRadius;
+				y_pos = y + 1;
+				z_pos = z + Math.sin(degree) * zRadius;
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.FLAME, x_pos, y_pos, z_pos, 5, 0.1, 0.1, 0.1, 0);
+				degree = degree + Math.toRadians(15);
+			}
 		}
 	}
 }

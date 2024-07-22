@@ -1,48 +1,6 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
-
-import net.mcreator.craftnoyaiba.network.CraftnoyaibaModVariables;
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModMobEffects;
-import net.mcreator.craftnoyaiba.init.CraftnoyaibaModEntities;
-import net.mcreator.craftnoyaiba.entity.TCAFProjectileEntity;
-import net.mcreator.craftnoyaiba.entity.GodspeedTCAFEntity;
-import net.mcreator.craftnoyaiba.entity.FlamingThunderGodEntity;
-import net.mcreator.craftnoyaiba.CraftnoyaibaMod;
-
-import javax.annotation.Nullable;
-
-import java.util.Comparator;
 
 @Mod.EventBusSubscriber
 public class ThunderSkillsProcedure {
@@ -69,12 +27,6 @@ public class ThunderSkillsProcedure {
 								.equals((entity.getCapability(CraftnoyaibaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CraftnoyaibaModVariables.PlayerVariables())).Form1)) {
 							TCAFActiveEffectStartedappliedProcedure.execute(world, entity);
 							CraftnoyaibaMod.queueServerWork(10, () -> {
-								if (world instanceof ServerLevel _level) {
-									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-									entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-									entityToSpawn.setVisualOnly(true);
-									_level.addFreshEntity(entityToSpawn);
-								}
 								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 									_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.TCAF_ACTIVE.get(), 30, 0));
 							});
@@ -174,12 +126,6 @@ public class ThunderSkillsProcedure {
 										capability.syncPlayerVariables(entity);
 									});
 								}
-								if (world instanceof ServerLevel _level) {
-									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-									entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-									entityToSpawn.setVisualOnly(true);
-									_level.addFreshEntity(entityToSpawn);
-								}
 								{
 									Entity _shootFrom = entity;
 									Level projectileLevel = _shootFrom.level();
@@ -201,12 +147,6 @@ public class ThunderSkillsProcedure {
 									}
 								}
 								CraftnoyaibaMod.queueServerWork(10, () -> {
-									if (world instanceof ServerLevel _level) {
-										LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-										entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-										entityToSpawn.setVisualOnly(true);
-										_level.addFreshEntity(entityToSpawn);
-									}
 									{
 										Entity _shootFrom = entity;
 										Level projectileLevel = _shootFrom.level();
@@ -228,12 +168,6 @@ public class ThunderSkillsProcedure {
 										}
 									}
 									CraftnoyaibaMod.queueServerWork(10, () -> {
-										if (world instanceof ServerLevel _level) {
-											LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-											entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-											entityToSpawn.setVisualOnly(true);
-											_level.addFreshEntity(entityToSpawn);
-										}
 										{
 											Entity _shootFrom = entity;
 											Level projectileLevel = _shootFrom.level();
@@ -255,12 +189,6 @@ public class ThunderSkillsProcedure {
 											}
 										}
 										CraftnoyaibaMod.queueServerWork(10, () -> {
-											if (world instanceof ServerLevel _level) {
-												LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-												entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-												entityToSpawn.setVisualOnly(true);
-												_level.addFreshEntity(entityToSpawn);
-											}
 											{
 												Entity _shootFrom = entity;
 												Level projectileLevel = _shootFrom.level();
@@ -282,12 +210,6 @@ public class ThunderSkillsProcedure {
 												}
 											}
 											CraftnoyaibaMod.queueServerWork(10, () -> {
-												if (world instanceof ServerLevel _level) {
-													LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-													entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-													entityToSpawn.setVisualOnly(true);
-													_level.addFreshEntity(entityToSpawn);
-												}
 												{
 													Entity _shootFrom = entity;
 													Level projectileLevel = _shootFrom.level();
@@ -309,12 +231,6 @@ public class ThunderSkillsProcedure {
 													}
 												}
 												CraftnoyaibaMod.queueServerWork(10, () -> {
-													if (world instanceof ServerLevel _level) {
-														LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-														entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-														entityToSpawn.setVisualOnly(true);
-														_level.addFreshEntity(entityToSpawn);
-													}
 													{
 														Entity _shootFrom = entity;
 														Level projectileLevel = _shootFrom.level();
@@ -383,12 +299,6 @@ public class ThunderSkillsProcedure {
 							}
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal(("\u00A7l\u00A76" + "Thunder Breathing, First Form: Thunderclap and Flash | Eightfold")), true);
-							if (world instanceof ServerLevel _level) {
-								LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-								entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-								entityToSpawn.setVisualOnly(true);
-								_level.addFreshEntity(entityToSpawn);
-							}
 							{
 								Entity _shootFrom = entity;
 								Level projectileLevel = _shootFrom.level();
@@ -410,12 +320,6 @@ public class ThunderSkillsProcedure {
 								}
 							}
 							CraftnoyaibaMod.queueServerWork(10, () -> {
-								if (world instanceof ServerLevel _level) {
-									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-									entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-									entityToSpawn.setVisualOnly(true);
-									_level.addFreshEntity(entityToSpawn);
-								}
 								{
 									Entity _shootFrom = entity;
 									Level projectileLevel = _shootFrom.level();
@@ -437,12 +341,6 @@ public class ThunderSkillsProcedure {
 									}
 								}
 								CraftnoyaibaMod.queueServerWork(10, () -> {
-									if (world instanceof ServerLevel _level) {
-										LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-										entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-										entityToSpawn.setVisualOnly(true);
-										_level.addFreshEntity(entityToSpawn);
-									}
 									{
 										Entity _shootFrom = entity;
 										Level projectileLevel = _shootFrom.level();
@@ -464,12 +362,6 @@ public class ThunderSkillsProcedure {
 										}
 									}
 									CraftnoyaibaMod.queueServerWork(10, () -> {
-										if (world instanceof ServerLevel _level) {
-											LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-											entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-											entityToSpawn.setVisualOnly(true);
-											_level.addFreshEntity(entityToSpawn);
-										}
 										{
 											Entity _shootFrom = entity;
 											Level projectileLevel = _shootFrom.level();
@@ -491,12 +383,6 @@ public class ThunderSkillsProcedure {
 											}
 										}
 										CraftnoyaibaMod.queueServerWork(10, () -> {
-											if (world instanceof ServerLevel _level) {
-												LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-												entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-												entityToSpawn.setVisualOnly(true);
-												_level.addFreshEntity(entityToSpawn);
-											}
 											{
 												Entity _shootFrom = entity;
 												Level projectileLevel = _shootFrom.level();
@@ -518,12 +404,6 @@ public class ThunderSkillsProcedure {
 												}
 											}
 											CraftnoyaibaMod.queueServerWork(10, () -> {
-												if (world instanceof ServerLevel _level) {
-													LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-													entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-													entityToSpawn.setVisualOnly(true);
-													_level.addFreshEntity(entityToSpawn);
-												}
 												{
 													Entity _shootFrom = entity;
 													Level projectileLevel = _shootFrom.level();
@@ -545,12 +425,6 @@ public class ThunderSkillsProcedure {
 													}
 												}
 												CraftnoyaibaMod.queueServerWork(10, () -> {
-													if (world instanceof ServerLevel _level) {
-														LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-														entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-														entityToSpawn.setVisualOnly(true);
-														_level.addFreshEntity(entityToSpawn);
-													}
 													{
 														Entity _shootFrom = entity;
 														Level projectileLevel = _shootFrom.level();
@@ -572,12 +446,6 @@ public class ThunderSkillsProcedure {
 														}
 													}
 													CraftnoyaibaMod.queueServerWork(10, () -> {
-														if (world instanceof ServerLevel _level) {
-															LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-															entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
-															entityToSpawn.setVisualOnly(true);
-															_level.addFreshEntity(entityToSpawn);
-														}
 														{
 															Entity _shootFrom = entity;
 															Level projectileLevel = _shootFrom.level();
@@ -638,8 +506,6 @@ public class ThunderSkillsProcedure {
 							}
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.STUNNED.get(), 80, 0));
-							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(CraftnoyaibaModMobEffects.NEW_GODSPEED.get(), 50, 0));
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
 									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.breath")), SoundSource.NEUTRAL, 1, 1);
