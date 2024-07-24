@@ -1,6 +1,14 @@
 package net.mcreator.craftnoyaiba.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.craftnoyaiba.entity.FlamingThunderGodEntity;
+
+import java.util.Comparator;
 
 public class FlamingThunderGodActiveEffectExpiresProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

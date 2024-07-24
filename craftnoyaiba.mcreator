@@ -6233,7 +6233,7 @@
       "name": "FlamingThunderGodActive",
       "type": "potioneffect",
       "sortid": 302,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "flaming_thunder_god_active",
       "metadata": {
@@ -6255,10 +6255,6 @@
           "src/main/java/net/mcreator/craftnoyaiba/procedures/FlamingThunderGodActiveEffectExpiresProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
