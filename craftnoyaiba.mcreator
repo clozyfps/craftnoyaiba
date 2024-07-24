@@ -621,8 +621,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/world/inventory/MenuMenu.java",
-          "src/main/java/net/mcreator/craftnoyaiba/client/gui/MenuScreen.java",
-          "src/main/java/net/mcreator/craftnoyaiba/network/MenuButtonMessage.java"
+          "src/main/java/net/mcreator/craftnoyaiba/network/MenuButtonMessage.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/gui/MenuScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -1657,9 +1657,9 @@
       "registry_name": "town",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/biome/town.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/town_tree.json",
           "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/town_tree.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/town_tree.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/biome/town.json"
         ]
       },
       "path": "~/Biomes"
@@ -1673,9 +1673,9 @@
       "registry_name": "house_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/house_1.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure_set/house_1.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/house_1.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/house_1.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/house_1.json"
         ]
       },
       "path": "~/Structures"
@@ -1689,9 +1689,9 @@
       "registry_name": "house_2",
       "metadata": {
         "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/house_2.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure/house_2.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/house_2.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/house_2.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/house_2.json"
         ]
       },
       "path": "~/Structures"
@@ -1923,9 +1923,9 @@
       "registry_name": "jigoro_kuwajima",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/entity/JigoroKuwajimaEntity.java",
-          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/jigoro_kuwajima_biome_modifier.json",
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/JigoroKuwajimaRenderer.java",
+          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/jigoro_kuwajima_biome_modifier.json",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/JigoroKuwajimaEntity.java",
           "src/main/resources/assets/craftnoyaiba/models/item/jigoro_kuwajima_spawn_egg.json"
         ]
       },
@@ -2258,9 +2258,9 @@
       "registry_name": "kaigaku_human",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KaigakuHumanRenderer.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/kaigaku_human_spawn_egg.json",
           "src/main/resources/data/craftnoyaiba/forge/biome_modifier/kaigaku_human_biome_modifier.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/kaigaku_human_spawn_egg.json",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KaigakuHumanRenderer.java",
           "src/main/java/net/mcreator/craftnoyaiba/entity/KaigakuHumanEntity.java"
         ]
       },
@@ -2414,8 +2414,8 @@
       "registry_name": "test",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/item/TestItem.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/test.json"
+          "src/main/resources/assets/craftnoyaiba/models/item/test.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/TestItem.java"
         ]
       },
       "path": "~/Items"
@@ -3768,9 +3768,9 @@
       "registry_name": "demon_slayer_uniform",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/demon_slayer_uniform_chestplate.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/DemonSlayerUniformItem.java",
           "src/main/resources/assets/craftnoyaiba/models/item/demon_slayer_uniform_leggings.json",
-          "src/main/java/net/mcreator/craftnoyaiba/item/DemonSlayerUniformItem.java"
+          "src/main/resources/assets/craftnoyaiba/models/item/demon_slayer_uniform_chestplate.json"
         ]
       },
       "path": "~/Armors"
@@ -3847,8 +3847,8 @@
       "registry_name": "take_blood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/world/inventory/TakeBloodMenu.java",
-          "src/main/java/net/mcreator/craftnoyaiba/client/gui/TakeBloodScreen.java"
+          "src/main/java/net/mcreator/craftnoyaiba/client/gui/TakeBloodScreen.java",
+          "src/main/java/net/mcreator/craftnoyaiba/world/inventory/TakeBloodMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -3976,11 +3976,11 @@
       "registry_name": "wisteria",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/wisteria.json",
           "src/main/resources/data/craftnoyaiba/loot_tables/blocks/wisteria.json",
           "src/main/resources/assets/craftnoyaiba/models/block/wisteria.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/wisteria.json",
           "src/main/java/net/mcreator/craftnoyaiba/block/WisteriaBlock.java",
-          "src/main/resources/assets/craftnoyaiba/blockstates/wisteria.json"
+          "src/main/resources/assets/craftnoyaiba/models/item/wisteria.json"
         ]
       },
       "path": "~/Blocks"
@@ -4006,11 +4006,11 @@
       "registry_name": "demon_spawn_point",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/block/demon_spawn_point.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/DemonSpawnPointBlock.java",
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/demon_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/models/item/demon_spawn_point.json",
-          "src/main/resources/assets/craftnoyaiba/blockstates/demon_spawn_point.json"
+          "src/main/resources/assets/craftnoyaiba/blockstates/demon_spawn_point.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/DemonSpawnPointBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/demon_spawn_point.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/demon_spawn_point.json"
         ]
       },
       "path": "~/Blocks"
@@ -4024,12 +4024,12 @@
       "registry_name": "fujikasane",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/fujikasane_tree.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/biome/fujikasane.json",
           "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneFruitDecorator.java",
-          "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/fujikasane_tree.json",
-          "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneLeaveDecorator.java",
+          "src/main/resources/data/craftnoyaiba/worldgen/placed_feature/fujikasane_tree.json",
           "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneTrunkDecorator.java",
-          "src/main/resources/data/craftnoyaiba/worldgen/biome/fujikasane.json"
+          "src/main/java/net/mcreator/craftnoyaiba/world/features/treedecorators/FujikasaneLeaveDecorator.java",
+          "src/main/resources/data/craftnoyaiba/worldgen/configured_feature/fujikasane_tree.json"
         ]
       },
       "path": "~/Biomes"
@@ -4043,9 +4043,9 @@
       "registry_name": "final_selection",
       "metadata": {
         "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/final_selection.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/final_selection.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/final_selection.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/final_selection.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/final_selection.json"
         ]
       },
       "path": "~/Structures"
@@ -4131,9 +4131,9 @@
       "registry_name": "kiriya_ubuyashiki",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/entity/KiriyaUbuyashikiEntity.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/kiriya_ubuyashiki_spawn_egg.json",
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KiriyaUbuyashikiRenderer.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/kiriya_ubuyashiki_spawn_egg.json"
+          "src/main/java/net/mcreator/craftnoyaiba/entity/KiriyaUbuyashikiEntity.java"
         ]
       },
       "path": "~/Mobs"
@@ -4147,9 +4147,9 @@
       "registry_name": "kanata_ubuyashiki",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/kanata_ubuyashiki_spawn_egg.json",
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/KanataUbuyashikiRenderer.java",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/KanataUbuyashikiEntity.java"
+          "src/main/java/net/mcreator/craftnoyaiba/entity/KanataUbuyashikiEntity.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/kanata_ubuyashiki_spawn_egg.json"
         ]
       },
       "path": "~/Mobs"
@@ -4163,11 +4163,11 @@
       "registry_name": "muzan_spawn_point",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/block/muzan_spawn_point.json",
           "src/main/resources/data/craftnoyaiba/loot_tables/blocks/muzan_spawn_point.json",
           "src/main/resources/assets/craftnoyaiba/models/item/muzan_spawn_point.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/MuzanSpawnPointBlock.java",
-          "src/main/resources/assets/craftnoyaiba/blockstates/muzan_spawn_point.json"
+          "src/main/resources/assets/craftnoyaiba/blockstates/muzan_spawn_point.json",
+          "src/main/resources/assets/craftnoyaiba/models/block/muzan_spawn_point.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/MuzanSpawnPointBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -4210,9 +4210,9 @@
       "registry_name": "infinity_castle",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle.json"
         ]
       },
       "path": "~/Structures"
@@ -4369,9 +4369,9 @@
       "registry_name": "infinity_castle_platform",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_platform.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_platform.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_platform.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_platform.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_platform.json"
         ]
       },
       "path": "~/Structures"
@@ -4429,8 +4429,8 @@
       "registry_name": "infinity_castle_multi_bridge",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_multi_bridge.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_multi_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_multi_bridge.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_multi_bridge.json"
         ]
       },
@@ -4445,9 +4445,9 @@
       "registry_name": "infinity_castle_connecting_houses",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_houses.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_houses.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_connecting_houses.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_houses.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_houses.json"
         ]
       },
       "path": "~/Structures"
@@ -4461,9 +4461,9 @@
       "registry_name": "infinity_castle_connecting_house_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_house_2.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_connecting_house_2.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_house_2.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_connecting_house_2.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_connecting_house_2.json"
         ]
       },
       "path": "~/Structures"
@@ -4493,9 +4493,9 @@
       "registry_name": "infinity_castle_house",
       "metadata": {
         "files": [
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_house.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_house.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_house.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_house.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_house.json"
         ]
       },
       "path": "~/Structures"
@@ -4525,9 +4525,9 @@
       "registry_name": "infinity_castle_bridge",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_bridge.json",
           "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_bridge.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_bridge.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_bridge.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_bridge.json"
         ]
       },
       "path": "~/Structures"
@@ -4541,9 +4541,9 @@
       "registry_name": "infinity_castle_hut",
       "metadata": {
         "files": [
-          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_hut.json",
+          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_hut.json",
           "src/main/resources/data/craftnoyaiba/worldgen/template_pool/infinity_castle_hut.json",
-          "src/main/resources/data/craftnoyaiba/worldgen/structure_set/infinity_castle_hut.json"
+          "src/main/resources/data/craftnoyaiba/worldgen/structure/infinity_castle_hut.json"
         ]
       },
       "path": "~/Structures"
@@ -4557,9 +4557,9 @@
       "registry_name": "infinity_castle_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorRenderer.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/InfinityCastleDoorEntity.java",
           "src/main/java/net/mcreator/craftnoyaiba/entity/model/InfinityCastleDoorModel.java",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/InfinityCastleDoorEntity.java"
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorRenderer.java"
         ]
       },
       "path": "~/Mobs/Misc"
@@ -4700,8 +4700,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/entity/InfinityCastleDoorUpsideDownEntity.java",
-          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorUpsideDownRenderer.java",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/model/InfinityCastleDoorUpsideDownModel.java"
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/InfinityCastleDoorUpsideDownModel.java",
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/InfinityCastleDoorUpsideDownRenderer.java"
         ]
       },
       "path": "~/Mobs/Misc"
@@ -4923,8 +4923,8 @@
       "registry_name": "pistol",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/item/PistolItem.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/pistol.json"
+          "src/main/resources/assets/craftnoyaiba/models/item/pistol.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/PistolItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -5194,10 +5194,10 @@
       "registry_name": "flame_first_form",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlameFirstFormModel.java",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/layer/FlameFirstFormLayer.java",
           "src/main/java/net/mcreator/craftnoyaiba/entity/FlameFirstFormEntity.java",
-          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FlameFirstFormRenderer.java"
+          "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FlameFirstFormRenderer.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlameFirstFormModel.java",
+          "src/main/java/net/mcreator/craftnoyaiba/entity/layer/FlameFirstFormLayer.java"
         ]
       },
       "path": "~/Mobs/Misc/Breathing/Flame"
@@ -5698,8 +5698,8 @@
       "registry_name": "training_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/training_sword.json",
-          "src/main/java/net/mcreator/craftnoyaiba/item/TrainingSwordItem.java"
+          "src/main/java/net/mcreator/craftnoyaiba/item/TrainingSwordItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/training_sword.json"
         ]
       },
       "path": "~/Weapons"
@@ -5795,8 +5795,8 @@
       "registry_name": "special_thunder_nichirin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/item/SpecialThunderNichirinItem.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/special_thunder_nichirin.json"
+          "src/main/resources/assets/craftnoyaiba/models/item/special_thunder_nichirin.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/SpecialThunderNichirinItem.java"
         ]
       },
       "path": "~/Weapons"
@@ -5879,8 +5879,8 @@
       "registry_name": "blue_electricity",
       "metadata": {
         "files": [
-          "src/main/resources/assets/craftnoyaiba/particles/blue_electricity.json",
-          "src/main/java/net/mcreator/craftnoyaiba/client/particle/BlueElectricityParticle.java"
+          "src/main/java/net/mcreator/craftnoyaiba/client/particle/BlueElectricityParticle.java",
+          "src/main/resources/assets/craftnoyaiba/particles/blue_electricity.json"
         ]
       },
       "path": "~/Particles"
@@ -6097,8 +6097,8 @@
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/FlamingThunderGodRenderer.java",
           "src/main/java/net/mcreator/craftnoyaiba/entity/FlamingThunderGodEntity.java",
-          "src/main/resources/assets/craftnoyaiba/models/item/flaming_thunder_god_spawn_egg.json",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlamingThunderGodModel.java"
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/FlamingThunderGodModel.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/flaming_thunder_god_spawn_egg.json"
         ]
       },
       "path": "~/Mobs/Misc/Breathing/Thunder"
@@ -7098,6 +7098,150 @@
       "path": "~/Procedures"
     },
     {
+      "name": "PillarBlockTop",
+      "type": "block",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_block_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_top.json",
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_top.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_top.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockTopBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_top.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PillarBlockBottom",
+      "type": "block",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_block_bottom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_bottom.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_bottom.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_bottom.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockBottomBlock.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_bottom.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PillarMiddle",
+      "type": "block",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/pillar_middle.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/PillarMiddleBlock.java",
+          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_middle.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_middle.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/pillar_middle.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Tatami1",
+      "type": "block",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatami_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/block/tatami_1.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_1.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_1.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/tatami_1.json",
+          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami1Block.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Tatami2",
+      "type": "block",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tatami_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami2Block.java",
+          "src/main/resources/assets/craftnoyaiba/models/block/tatami_2.json",
+          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_2.json",
+          "src/main/resources/assets/craftnoyaiba/models/item/tatami_2.json",
+          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_2.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SunDamage",
+      "type": "damagetype",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/craftnoyaiba/damage_type/sun_damage.json"
+        ]
+      },
+      "path": "~/Damage Sources"
+    },
+    {
+      "name": "UpperMoonOneArmor",
+      "type": "armor",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upper_moon_one_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/craftnoyaiba/models/item/upper_moon_one_armor_leggings.json",
+          "src/main/java/net/mcreator/craftnoyaiba/item/UpperMoonOneArmorItem.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/upper_moon_one_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Armors"
+    },
+    {
+      "name": "YaibaDemonArmor",
+      "type": "tab",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_demon_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "YaibaSlayerArmor",
+      "type": "tab",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaiba_slayer_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
       "name": "ZenitsuAgatsumaOnEntityTickUpdate",
       "type": "procedure",
       "sortid": 342,
@@ -7143,133 +7287,13 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/craftnoyaiba/entity/ZenitsuAgatsumaEntity.java",
-          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/zenitsu_agatsuma_biome_modifier.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/zenitsu_agatsuma_spawn_egg.json",
           "src/main/java/net/mcreator/craftnoyaiba/client/renderer/ZenitsuAgatsumaRenderer.java",
-          "src/main/java/net/mcreator/craftnoyaiba/entity/model/ZenitsuAgatsumaModel.java"
+          "src/main/java/net/mcreator/craftnoyaiba/entity/model/ZenitsuAgatsumaModel.java",
+          "src/main/resources/assets/craftnoyaiba/models/item/zenitsu_agatsuma_spawn_egg.json",
+          "src/main/resources/data/craftnoyaiba/forge/biome_modifier/zenitsu_agatsuma_biome_modifier.json"
         ]
       },
       "path": "~/Mobs"
-    },
-    {
-      "name": "PillarMiddle",
-      "type": "block",
-      "sortid": 344,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pillar_middle",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_middle.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/pillar_middle.json",
-          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_middle.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/PillarMiddleBlock.java",
-          "src/main/resources/assets/craftnoyaiba/models/block/pillar_middle.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "SunDamage",
-      "type": "damagetype",
-      "sortid": 347,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sun_damage",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/craftnoyaiba/damage_type/sun_damage.json"
-        ]
-      },
-      "path": "~/Damage Sources"
-    },
-    {
-      "name": "PillarBlockBottom",
-      "type": "block",
-      "sortid": 343,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pillar_block_bottom",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_bottom.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_bottom.json",
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_bottom.json",
-          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_bottom.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockBottomBlock.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "PillarBlockTop",
-      "type": "block",
-      "sortid": 342,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pillar_block_top",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/pillar_block_top.json",
-          "src/main/resources/assets/craftnoyaiba/blockstates/pillar_block_top.json",
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/pillar_block_top.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/PillarBlockTopBlock.java",
-          "src/main/resources/assets/craftnoyaiba/models/block/pillar_block_top.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "UpperMoonOneArmor",
-      "type": "armor",
-      "sortid": 348,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upper_moon_one_armor",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/craftnoyaiba/models/item/upper_moon_one_armor_leggings.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/upper_moon_one_armor_chestplate.json",
-          "src/main/java/net/mcreator/craftnoyaiba/item/UpperMoonOneArmorItem.java"
-        ]
-      },
-      "path": "~/Armors"
-    },
-    {
-      "name": "Tatami1",
-      "type": "block",
-      "sortid": 345,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tatami_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/craftnoyaiba/models/block/tatami_1.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/tatami_1.json",
-          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_1.json",
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_1.json",
-          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami1Block.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Tatami2",
-      "type": "block",
-      "sortid": 346,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tatami_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/craftnoyaiba/block/Tatami2Block.java",
-          "src/main/resources/assets/craftnoyaiba/blockstates/tatami_2.json",
-          "src/main/resources/data/craftnoyaiba/loot_tables/blocks/tatami_2.json",
-          "src/main/resources/assets/craftnoyaiba/models/item/tatami_2.json",
-          "src/main/resources/assets/craftnoyaiba/models/block/tatami_2.json"
-        ]
-      },
-      "path": "~/Blocks"
     },
     {
       "name": "MobSwordSwing",
@@ -7414,30 +7438,6 @@
         ]
       },
       "path": "~/Potion/Procedures"
-    },
-    {
-      "name": "YaibaDemonArmor",
-      "type": "tab",
-      "sortid": 350,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yaiba_demon_armor",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Creative Tabs"
-    },
-    {
-      "name": "YaibaSlayerArmor",
-      "type": "tab",
-      "sortid": 349,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yaiba_slayer_armor",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Creative Tabs"
     }
   ],
   "variable_elements": [
@@ -8297,15 +8297,14 @@
       "entity.craftnoyaiba.kanata_ubuyashiki": "Kanata Ubuyashiki",
       "entity.craftnoyaiba.flame_first_form": "Flame First Form",
       "gui.craftnoyaiba.create_ability.button_sslx2": "§lX",
-      "effect.craftnoyaiba.tcafend": "Tcafend",
-      "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
-      "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
       "item.craftnoyaiba.kiriya_ubuyashiki_spawn_egg": "Kiriya Ubuyashiki Spawn Egg",
-      "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
-      "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
+      "entity.craftnoyaiba.thunder_clap_and_flash_mob": "Thunder Clap And Flash Mob",
+      "gui.craftnoyaiba.create_ability.button_sslx3": "§lX",
+      "effect.craftnoyaiba.tcafend": "Tcafend",
       "block.craftnoyaiba.pillar_block_bottom": "Pillar Block (Bottom)",
+      "gui.craftnoyaiba.create_ability.button_sslx4": "§lX",
+      "gui.craftnoyaiba.create_ability.button_ssl": "§l+",
       "subtitles.biwa": "",
-      "effect.craftnoyaiba.new_godspeed": "New Godspeed",
       "advancements.muzan_favorite.descr": "One Of Muzan\u0027s Favorites, You can say Muzan.",
       "item.craftnoyaiba.basic_nichirin_sword": "Nichirin Sword",
       "gui.craftnoyaiba.create_ability.button_sslx1": "§lX",
